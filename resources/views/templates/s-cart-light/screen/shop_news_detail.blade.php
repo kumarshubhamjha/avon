@@ -10,7 +10,7 @@ $layout_page = shop_news_detail
 
 @section('block_main')
  
- @endforeach
+ 
 <section class="section section-sm section-first bg-default text-md-left">
     <div class="container">
         <div class="row">

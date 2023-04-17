@@ -11,8 +11,10 @@ $news = $modelNews->start()->setlimit(sc_config('item_top'))->getData();
                 <p>Lorem ipsum</p>
             </div> 
             <div class="owl-carousel" id="blog">
-                
-      @foreach ($news as $blog)
+            @php
+            $data = DB::table('sc_blog')->where('status',1)->get();
+            @endphp
+      @foreach ($data as $blog)
         {{-- Render product single --}}
         @include($sc_templatePath.'.common.blog_single', ['blog' => $blog])
         {{-- //Render product single --}}

@@ -1,33 +1,26 @@
 @php
 $productsNew = $modelProduct->start()->getProductLatest()->setlimit(sc_config('product_top'))->getData();
 @endphp
+@php
+ $offer =  DB::table('sc_offer')->where('status',1)->orderBy('sort', 'DESC')->get();                       
+@endphp
  <section class="offers mb-60 py-60">
         <div class="container d-flex flex-wrap justify-content-between align-items-center">
             <div class="heading-wrapper col-12 col-lg-4 pl-lg-0 mb-lg-0">
                 <div class="heading">Exciting Offers</div>
                 <p>We have offers on all kind of Banks, UPI, Cards</p>
-                <div class="viewall-link d-none d-lg-block ">
+                <!-- <div class="viewall-link d-none d-lg-block ">
                     <a href="#">View All Offers</a>
-                </div>
+                </div> -->
             </div>
             <div class="right col-12 col-lg-8">
                 <ul class="d-flex flex-wrap justify-content-between">
+                @foreach($offer as $data)
                     <li>
-                        <span>Discount Offer</span>
-                        <b>Flat 10% Off* on<br> all UPI Payments</b>
+                        <span>{{$data->title}}</span>
+                        {!! $data->desp !!}
                     </li>
-                    <li>
-                        <span>No extra charges</span>
-                        <b>0% EMIs on<br> UPI & Cards</b>
-                    </li>
-                    <li>
-                        <span>No hidden charges</span>
-                        <b>NO Cost<br> Emi</b>
-                    </li>
-                    <li>
-                        <span>Discount Offer</span>
-                        <b>Flat 5% off on Axis<br> Bank Credit cards</b>
-                    </li>
+                   @endforeach
                 </ul>
             </div>
             <div class="col-12 viewall-link d-none d-md-block d-lg-none text-center mt-4">
