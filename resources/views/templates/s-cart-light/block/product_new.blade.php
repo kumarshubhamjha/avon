@@ -226,6 +226,9 @@ $productsNew = $modelProduct->start()->getProductLatest()->setlimit(sc_config('p
             </div>
         </div>
     </section>
+           @php
+            $press = DB::table('sc_press')->where('status',1)->take(10)->get();
+            @endphp
       <section class="press-coverage-sec common-slider-btn py-4">
         <div class="container">
             <div class="col-12 heading-wrapper text-center">
@@ -233,31 +236,16 @@ $productsNew = $modelProduct->start()->getProductLatest()->setlimit(sc_config('p
                 <p>All eyes are on us.</p>
             </div>
             <div class="w-100 owl-carousel" id="press-coverage">
+                @foreach($press as $data)
                 <div class="item">
                     <div class="image">
-                        <img src="img/press-hindustan.jpg" alt="">
+                        <img src="{{sc_file($data->image)}}" alt="">
                     </div>
                 </div>
-                <div class="item">
-                    <div class="image">
-                        <img src="img/press-the-times.jpg" alt="">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="image">
-                        <img src="img/press-the-hindu.jpg" alt="">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="image">
-                        <img src="img/press-indian.jpg" alt="">
-                    </div>
-                </div>
-                <div class="item">
-                    <div class="image">
-                        <img src="img/press-the-times.jpg" alt="">
-                    </div>
-                </div>
+               @endforeach
+              
+               
+               
             </div>
             <div class="viewall-link text-center mt-5">
                 <a href="#">View All</a>

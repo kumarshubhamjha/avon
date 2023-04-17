@@ -59,18 +59,18 @@
                 </div>
                 <div class="row items">
                     @foreach($data as $val)
-                    <div class="col-md-6 item">
+                    <div class="col-md-6 item active">
                         <div class="img-wrapper">
                             <img src="{{sc_file($val->image)}}" alt="press" class="img-fluid">
                         </div>
                         <div class="text-wrapper">
-                            <div class="left">
+                            <!-- <div class="left">
                                 <div class="name">{{$val->title}}</div>
                                 <div class="date">{{$val->date}}</div>
-                            </div>
-                            <div class="right">
+                            </div> -->
+                            <!-- <div class="right">
                                 <a href="#" class="viewall">view</a>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                   @endforeach
