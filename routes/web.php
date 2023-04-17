@@ -7,6 +7,7 @@ use App\Http\Controllers\AboutController;
 
 use App\Admin\Controllers\AdminSqureController;
 use App\Http\Controllers\AvonSquareController;
+use App\Admin\Controllers\AdminOfferController;
 
 use App\Admin\Controllers\AdminBlogController;
 use App\Admin\Controllers\AdminPressController;
@@ -167,6 +168,13 @@ Route::group([
     Route::post('assetcategory/store-update', [AdminAssectBrandController::class,'categorystoreUpdate'])->name('assetcategory.categorystoreUpdate');
     Route::get('assetcategory/delete/{id}', [AdminAssectBrandController::class,'categorydelete'])->name('assetcategory.categorydelete');
     
+
+
+    Route::get('offer', [AdminOfferController::class,'index'])->name('offer');
+    Route::get('offer/add-edit', [AdminOfferController::class,'addEdit'])->name('offer.addEdit');
+    Route::get('offer/add-edit/{id}', [AdminOfferController::class,'addEdit'])->name('offer.addEdit');
+    Route::post('offer/store-update', [AdminOfferController::class,'storeUpdate'])->name('offer.storeUpdate');
+    Route::get('offer/delete/{id}', [AdminOfferController::class,'delete'])->name('offer.delete');
 });
 
 
