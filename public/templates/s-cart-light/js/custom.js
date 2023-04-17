@@ -285,13 +285,12 @@ $(document).ready(function () {
         $('.total').find('span').remove();
         var sum = 0;
         $('li.item.selected input').each(function() {
-            sum += parseInt($(this).attr('price')); // note the change on this line
+            sum += parseInt($(this).attr('price'));
         });
         let price = parseInt($('.new-price').attr('price'));
         let costPrice = parseInt($('.old-price').attr('price'));
         $(".new-price").text(sum+price + '₹');
         $(".old-price").text(sum+costPrice + '₹');
-        // $('.total').append('<span>' + sum + '</span>');
     });
     
     
@@ -352,6 +351,3 @@ $(document).ready(function () {
     	}
     });
 });
-    
-
-

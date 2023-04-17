@@ -943,11 +943,18 @@ header .myaccount-popup .inner-content ul.profile {
     border: 1px solid #E8E8E8;
 }
 
+.trending-product .products .item .image {
+    border-top: solid 1px #ddd;
+    border-bottom: solid 1px #ddd;
+    min-height: 279px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .trending-product .products .item .inner-image {
     width: 100%;
     padding: 25px 15px;
-    border-top: solid 1px #ddd;
-    border-bottom: solid 1px #ddd;
     display: none;
 }
 
@@ -4014,7 +4021,7 @@ footer .copyright p {
 p.inner-text {
     font-weight: 400;
     font-size: 16px;
-    line-height: 21px;
+    line-height: 26px;
     color: #565656;
 }
 
@@ -4043,7 +4050,7 @@ p.inner-text {
     text-align: left;
     font-weight: 500;
     font-size: 40px;
-    line-height: 40px;
+    line-height: 48px;
     color: #DD1315;
     margin-bottom: 40px;
 }
@@ -4103,6 +4110,14 @@ p.inner-text {
     top: 0;
     bottom: 0;
     margin: auto;
+}
+
+.about-history .right-section p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #565656;
 }
 
 .about-legacy {

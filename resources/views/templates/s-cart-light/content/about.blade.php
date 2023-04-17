@@ -16,7 +16,7 @@
     <div class="content-box">
         <div class="container">
             <div class="row">
-                <div class="col-md-7 inner-content">
+                <div class="col-md-8 col-lg-7 inner-content">
                     <h1>{!! $data->banner_title !!}</h1>
                     
                     <div class="text-wrapper">
@@ -172,7 +172,7 @@
 <section class="about-production py-80">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-6 left-section">
+            <div class="col-lg-6 left-section mb-4 mb-lg-0">
                 <div class="heading-wrapper">
                     <div class="heading">{{$data->production_title}}</div>
                     <p>{{$data->production_subtitle}}</p>
@@ -182,7 +182,7 @@
                     <a href="{{url('production')}}" class="default-btn">Learn More</a>
                 </div>
             </div>
-            <div class="col-md-6 right-section">
+            <div class="col-lg-6 right-section">
                 <div class="top-wrapper">
                     <div class="img-wrapper">
                         <img src="{{sc_file($data->productionimage)}}" class="img-fluid" alt="top-img">
@@ -214,7 +214,7 @@
         </div>
         <div class="bottom-section">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4 col-xl-4 mb-4 mb-lg-0">
                     <div class="inner-content">
                         <div class="img-wrapper">
                             <img src="img/about/team-01.jpg" alt="Onkar Singh Pahwa" class="img-fluid">
@@ -227,7 +227,7 @@
                         
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4 col-xl-4 mb-4 mb-lg-0">
                     <div class="inner-content">
                         <div class="img-wrapper">
                             <img src="img/about/team-02.jpg" alt="Rishi" class="img-fluid">
@@ -239,7 +239,7 @@
                     </div>
                 </div>
                 
-                <div class="col-md-4">
+                <div class="col-md-6 col-lg-4 col-xl-4 mb-4 mb-lg-0">
                     <div class="inner-content">
                         <div class="img-wrapper">
                             <img src="img/about/team-03.jpg" alt="Mandeep Pahwa" class="img-fluid">
@@ -283,7 +283,7 @@
 <section class="about-awards py-80">
     <div class="container">
         <div class="row align-items-center">
-            <div class="col-md-6 left-section">
+            <div class="col-md-6 left-section mb-4 mb-lg-0">
                 <div class="img-wrapper">
                     <img src="img/about/awards.png" class="img-fluid" alt="history">
                 </div>
