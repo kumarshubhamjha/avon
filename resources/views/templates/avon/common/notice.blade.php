@@ -1,5 +1,5 @@
 <!--main right-->
-<div class="col-12">
+<div class="container mt-3">
     <div class="sc-notice">
         @if(Session::has('message') || Session::has('status'))
         <div class="alert alert-success alert-dismissible" role="alert">

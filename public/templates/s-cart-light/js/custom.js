@@ -350,4 +350,17 @@ $(document).ready(function () {
     		$n.val(amount-1);
     	}
     });
+
+
+    $('.ratingStars input').on('change', function() {
+        $('input[name=point]').removeClass('active');
+        var value = $('input[name=point]:checked').val();
+        for(var i=0; i<value; i++) {
+            $('.ratingStars input[name=point]').eq(i).addClass('active');
+        }        
+    });
+
+    $('#writeReview').click(function(){
+        $('#reviewForm').toggleClass('active')
+    })
 });

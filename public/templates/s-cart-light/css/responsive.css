@@ -8,6 +8,10 @@
     .common-slider-btn .owl-carousel .owl-nav .owl-next {
         right: -40px;
     }
+
+    .myprofile-pg .right-section .profile-detail {
+        column-gap: 60px
+    }
 }
 
 @media only screen and (max-width: 1199px) {
@@ -431,11 +435,15 @@
 
 
     /* About page */
-
     .about-banner .inner-content h1 {
         font-size: 28px;
         line-height: 34px;
         margin-bottom: 20px;
+    }
+
+    /* My Profile Page */
+    .myprofile-pg .right-section .profile-detail .item {
+        flex-direction: column;
     }
 }
 
@@ -858,4 +866,72 @@
     .about-legacy .owl-carousel .owl-nav button.owl-prev {
         left: 15%;
     }
+    /* End Of About Us Page */
+
+    /* Checkout Page */
+    .prods-wrapper .item .right-section .bottom-wrapper {
+        justify-content: flex-end;
+    }
+
+    .prods-wrapper .item .right-section .bottom-wrapper .text {
+        display: none;
+    }
+
+    .prods-wrapper .item .center-section .bottom-wrapper {
+        justify-content: flex-end;
+    }
+
+    .prods-wrapper .item .center-section .bottom-wrapper .text {
+        display: none;
+    }
+
+    .prods-wrapper .item {
+        flex-wrap: wrap;
+    }
+
+    .prods-wrapper .item .center-section {
+        width: calc(100% - 105px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-right: 1px solid #e8e8e8;
+    }
+
+    .prods-wrapper .item .right-section {
+        width: 60%;
+        border-top: 1px solid #e8e8e8;
+    }
+    .checkout-confirm-pg .prods-wrapper .item .remove-item,
+    .prods-wrapper .item .remove-item {
+        border-top: 1px solid #e8e8e8;
+    }
+
+    .checkout-confirm-pg .heading {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .checkout-confirm-pg #showTotal th {
+        white-space: nowrap;
+    }
+
+    .checkout-confirm-pg #showTotal td {
+        word-break: break-all;
+    }
+
+    .myprofile-pg .right-section .profile-detail {
+        column-count: 1;
+    }
+
+    .myprofile-pg table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    .myprofile-pg .table thead th,
+    .myprofile-pg .table tr td {
+        white-space: nowrap;
+    }
+    /* End Of Checkout Page */
 }

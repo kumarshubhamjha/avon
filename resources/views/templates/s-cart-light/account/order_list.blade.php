@@ -16,7 +16,7 @@ $layout_page = shop_profile
         {{ sc_language_render('front.no_item') }}
       </div>
       @else
-      <table class="table box table-bordered" width="100%">
+      <table class="table box table-bordered">
         <thead>
           <tr>
             <th style="width: 50px;">No.</th>

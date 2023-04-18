@@ -29,7 +29,7 @@ $layout_page = shop_checkout
 
 
             
-            <div class="col-md-8 checkout-left-section">
+            <div class="col-lg-8 checkout-left-section mb-4 mb-lg-0">
                 <div class="inner-section">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item address active" >
@@ -356,7 +356,7 @@ $layout_page = shop_checkout
                       </form>
                 </div>
             </div>
- <div class="col-md-4 checkout-right-section">
+            <div class="col-lg-4 checkout-right-section">
                 <div class="inner-content">
                     <div class="heading">Price Details</div>
                     {{-- Data total --}}

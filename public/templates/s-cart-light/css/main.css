@@ -3157,6 +3157,149 @@ footer .copyright p {
     background: #000000;
 }
 
+.pdp-review .top-wrapper,
+.pdp-review .form-wrapper {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.pdp-review .top-wrapper .inner-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pdp-review .top-wrapper .rating {
+    display: flex;
+    align-items: center;
+    color: #313033;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.pdp-review .top-wrapper .stars {
+    margin-right: 8px;
+    color: #DD1315;
+}
+
+.pdp-review .writeReview {
+    color: #313033;
+    font-weight: 600;
+    font-size: 14px;
+    border-bottom: 1px solid #313033;
+    cursor: pointer;
+}
+
+.pdp-review .writeReview:hover {
+    color: #DD1315;
+    border-bottom: 1px solid #DD1315;
+}
+
+.pdp-review .form-wrapper {
+    display: none;
+}
+
+.pdp-review .form-wrapper.active {
+    display: block;
+}
+
+.pdp-review .form-wrapper .heading {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+.pdp-review .ratingStars {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.pdp-review .ratingStars .stars {
+    display: flex;
+    align-items: center;
+}
+
+.pdp-review .ratingStars .stars input {
+    position: relative;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+}
+
+.pdp-review .ratingStars .stars input::before {
+    content: "\f005";
+    position: absolute;
+    font-family: FontAwesome;
+    color: #DD1315;
+    font-size: 20px;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    line-height: normal;
+    opacity: 0.3;
+}
+
+.pdp-review .ratingStars .stars input.active::before {
+    opacity: 1;
+}
+
+.pdp-review .buttons {
+    margin-top: 40px;
+}
+
+.pdp-review .review-detail {
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.pdp-review .review-detail:last-child {
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0px
+}
+
+.pdp-review .review-detail .ratings i {
+    color: #DD1315;
+}
+
+.pdp-review .review-detail .ratings i.disable {
+    opacity: 0.3;
+}
+
+.pdp-review .r-name {
+    text-transform: capitalize;
+}
+
+.pdp-review .r-name span.on {
+    margin: 0px 5px;
+}
+
+.pdp-review .r-name span.date {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.pdp-review .r-comment::first-letter {
+    text-transform: uppercase;
+}
+
+.pdp-review .r-comment {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: #555;
+    letter-spacing: 0.3px;
+}
+
+/* End of Product Page */
+
+
 /* Checkout Page */
 .checkout-wrapper {
     margin: 40px 0px 70px;
@@ -6710,13 +6853,14 @@ p.inner-text {
   justify-content: space-between;
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.35;
   color: #605D62;
   margin-bottom: 30px;
 }
 
 .myprofile-pg .right-section .profile-detail .item .text {
   font-weight: 600;
+  word-break: break-all;
 }
 
 .myprofile-pg .right-section .cards .item {
@@ -6752,6 +6896,8 @@ p.inner-text {
 
 .myprofile-pg .list:last-child {
     border-bottom: 0px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
 }
 
 .myprofile-pg .list .btns {
@@ -6819,7 +6965,7 @@ p.inner-text {
 /*Checkout Confirm Page*/
 
 .checkout-confirm-pg .prods-wrapper .item .remove-item {
-    width: 20%;
+    width: 40%;
     padding: 16px 8px;
     font-size: 16px;
     font-weight: 600;
@@ -6888,6 +7034,15 @@ p.inner-text {
 .checkout-confirm-pg .back-btn .default-btn:hover {
     color: #DD1315;
 }
-
-
 /*End Of Checkout Confirm Page*/
+
+/* Alert */
+
+.alert {
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.alert-dismissible .close {
+    padding: 7px 15px;
+}

@@ -16,7 +16,7 @@ $layout_page = shop_cart
         <div class="row">
             @if (count($cart) ==0)
 
-            <div class="col-md-10">
+            <div class="col-lg-10">
                 {!! sc_language_render('cart.cart_empty') !!}!
             </div>
 
@@ -28,12 +28,12 @@ $layout_page = shop_cart
             {{-- Render cart item for earch shop --}}
             @foreach ($cartTmp as $sId => $cartItem)
           
-            <div class="col-md-10">
+            <div class="col-lg-10">
                 <div class="heading mb-4">{{ sc_store('title', $sId) }}</div>
                 <!--<h5><i class="fa fa-shopping-bag" aria-hidden="true"></i>  {{ sc_store('title', $sId) }}</h5>-->
             </div>
 
-            <div class="col-md-10">
+            <div class="col-lg-10">
                 <form action="{{ sc_route('checkout.prepare') }}" method="POST">
                     <input type="hidden" name="store_id" value="{{ $sId }}">
                     @csrf
