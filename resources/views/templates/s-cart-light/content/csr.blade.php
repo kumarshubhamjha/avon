@@ -13,7 +13,7 @@
 </div>
 
 
-<section class="csr">
+<section class="csr py-60">
     <div class="container">
         <div class="heading">{{$data->heading}}</div>
         <p class="mb-3">{!! $data->content !!}</p>
@@ -22,34 +22,40 @@
     </div>
 </section>
 
-<section class="csr-expeniture pb-5">
+<section class="csr-expeniture py-80 light-bg">
     <div class="container">
-        <div class="row py-3">
-            <div class="col-md-6">
-                <div class="heading">{{$data->headingone}}</div>
-              {!! $data->contentthree !!}
+        <div class="row item">
+            <div class="col-md-6 img-box">
+                <div class="img-wrapper">
+                    <img src="{{sc_file($data->image)}}" class="img-fluid" alt="image">
+                </div>
             </div>
-            <div class="col-md-6">
-                <img src="{{sc_file($data->image)}}" alt="image">
+            <div class="col-md-6 text-box">
+                <div class="heading">{{$data->headingone}}</div>
+                {!! $data->contentthree !!}
             </div>
         </div>
-        <div class="row py-3">
-            <div class="col-md-6">
-                <img src="{{sc_file($data->imagetwo)}}" alt="image">
+        <div class="row item">
+            <div class="col-md-6 img-box">
+                <div class="img-wrapper">
+                    <img src="{{sc_file($data->imagetwo)}}" class="img-fluid" alt="image">
+                </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6 text-box">
                 <div class="heading">{{$data->headingtwo}}</div>
                {!! $data->contentfour !!}
                 
             </div>            
         </div>
-        <div class="row py-3">
-            <div class="col-md-6">
+        <div class="row item">
+            <div class="col-md-6 img-box">
+                <div class="img-wrapper">
+                    <img src="{{sc_file($data->imagethree)}}" class="img-fluid" alt="image">
+                </div>
+            </div>
+            <div class="col-md-6 text-box">
                 <div class="heading">{{$data->headingthree}}</div>
                {!! $data->contentfive !!}
-            </div>
-            <div class="col-md-6">
-                <img src="{{sc_file($data->imagethree)}}" alt="image">
             </div>
         </div>
     </div>

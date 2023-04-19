@@ -1,6 +1,6 @@
 <!--main right-->
-<div class="container mt-3">
-    <div class="sc-notice">
+<div class="container">
+    <div class="sc-notice mt-3">
         @if(Session::has('message') || Session::has('status'))
         <div class="alert alert-success alert-dismissible" role="alert">
             <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>

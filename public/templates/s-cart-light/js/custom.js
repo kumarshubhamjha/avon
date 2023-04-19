@@ -149,8 +149,9 @@ $(document).ready(function () {
         });
     }
     
+
     if ($(window).width() < 1020) {
-        $('header .nav-link').after().click(function(e){
+        $('header .arrowdropdown .nav-link').after().click(function(e){
             e.preventDefault();
             $(this).toggleClass('active');
             $(this).parent().find('.dropdown-menu').toggleClass('show');
@@ -162,7 +163,6 @@ $(document).ready(function () {
     });
 
     //Tabbing//
-
     $(".trending-product .products .color-image a").click(function () {
         $(this).parents('.item').find('a').removeClass("active");
         $(this).parents('.item').find('.inner-image').removeClass("active");
@@ -179,7 +179,7 @@ $(document).ready(function () {
     // PDP Select Picker
     $('.pdp-select').selectpicker();
 
-    // PDP Slider
+    // PDP Slick Slider
     $('.slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -200,6 +200,18 @@ $(document).ready(function () {
         verticalSwiping:true,
     });
     
+    // PDP Owl Carousel
+    $("#pdpGallerySlider").owlCarousel({
+        dots: false,
+        nav: true,
+        loop: true,
+        autoplay: true,
+        active: true,
+        items: 1,
+        autoplayTimeout: 3000,
+        smartSpeed: 800,
+        autoplayHoverPause: true
+    });
     
     // Choices Tab
     $('.choices #v-pills-tabContent').find('.tab-pane:first-child').addClass('active');
@@ -242,7 +254,8 @@ $(document).ready(function () {
     $('.myaccount .icon').click(function() {
         $('.myaccount-popup').toggleClass('active');
     });
-    
+
+    // Main Banner Controls
     var control=  $("<div class='controls'>");
     $('.main-banner .owl-carousel').append(control);
     $('.main-banner .controls').prepend($('.main-banner .owl-nav'));
@@ -351,7 +364,7 @@ $(document).ready(function () {
     	}
     });
 
-
+    // Product page Review Rating
     $('.ratingStars input').on('change', function() {
         $('input[name=point]').removeClass('active');
         var value = $('input[name=point]:checked').val();
@@ -362,5 +375,5 @@ $(document).ready(function () {
 
     $('#writeReview').click(function(){
         $('#reviewForm').toggleClass('active')
-    })
+    });
 });

@@ -19,7 +19,7 @@ $layout_page = shop_product_detail
     <div class="container">
         <div class="row">
             <div class="col-md-8 pdp-left-section">
-                <div class="pdp-gallery-wrapper">
+                <!-- <div class="pdp-gallery-wrapper">
                     <div class="slider slider-nav">
                         @if ($product->images->count())
                             @php
@@ -56,6 +56,25 @@ $layout_page = shop_product_detail
                         @endif
                          
 
+                    </div>
+                </div> -->
+
+                <div class="pdpGalleryWrapper">
+                    <div class="galSlider owl-carousel" id="pdpGallerySlider">
+                        @if ($product->images->count())
+                            @php
+                            $countItem = 1 + $product->images->count();
+                            @endphp
+                           
+                            @foreach ($product->images as $key=>$image)
+                                <div class="item">
+                                    <div class="img-wrapper"><img class="img-fluid" src="{{ sc_file($image->getImage()) }}" alt="Suspension"></div>
+                                </div>
+                            @endforeach
+                            <div class="item">
+                                <div class="img-wrapper"><img class="img-fluid" src="{{ sc_file($product->image) }}" alt="Suspension"></div>
+                            </div>
+                        @endif
                     </div>
                 </div>
                  

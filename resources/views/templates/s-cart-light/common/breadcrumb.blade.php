@@ -58,10 +58,8 @@
     </div>
     
     @if ($bannerBreadcrumbImage)
-    <section class="main-banner top-banner">
-        <div class="owl-carousel" id="bannerslider">
-       
-            <div class="item">
+    <section class="main-banner top-banner img-only">
+        <div class="item">
                 <div class="inner-content">
                     <img src="{{ $bannerBreadcrumbImage }}" alt="banner-img">
                     <div class="content-wrapper">
@@ -80,9 +78,6 @@
                     </div>
                 </div>
             </div>
-           
-           
-        </div>
     </section>
     @endif
     

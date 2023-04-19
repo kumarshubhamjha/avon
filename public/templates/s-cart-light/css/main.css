@@ -1,4 +1,3 @@
-@import url("form.css");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap");
 
 body {
@@ -7,8 +6,6 @@ body {
     background: #FAFAFA;
     font-size: 16px;
     color: #000000;
-
-    
 }
 
 a {
@@ -44,6 +41,12 @@ ul {
 
 .light-bg {
     background: #ffffff;
+}
+
+.help-block {
+    color: #DD1315;
+    font-style: normal;
+    letter-spacing: 0.4px;
 }
 
 h2,
@@ -391,7 +394,7 @@ header nav.navbar .nav .nav-item .dropdown-menu {
 }
 
 header nav.navbar .nav .nav-item .dropdown-menu .dropdown-item {
-    padding: 8px 18px;
+    padding: 5px 18px;
     border-bottom: 0;
     font-size: 14px;
     letter-spacing: 0.5px;
@@ -749,6 +752,12 @@ header .myaccount-popup .inner-content ul.profile {
 }
 .main-banner.top-banner .item {
     padding: 0px;
+}
+
+.main-banner.top-banner.img-only .item img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .main-banner.top-banner .item .mobile{
@@ -2094,6 +2103,7 @@ footer .copyright p {
     margin-top: 40px;
 }
 
+/* Slick Slider */
 .pdp-left-section .pdp-gallery-wrapper {
     display: flex;
 }
@@ -2208,6 +2218,69 @@ footer .copyright p {
     border: 0px;
     border-bottom: 1px solid #E8E8E8;
 }
+/* End OF slick Slider */
+
+/* Owl Carousel */
+
+.pdpGalleryWrapper .owl-stage-outer {
+    border: 1px solid #E8E8E8;
+    height: 500px;
+}
+
+.pdpGalleryWrapper .owl-carousel .owl-stage {
+    height: 100%;
+}
+
+.pdpGalleryWrapper .owl-carousel.owl-drag .owl-item {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+.pdpGalleryWrapper .img-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background: #ffffff;
+    padding: 20px;
+    max-height: 500px;
+}
+
+.pdpGalleryWrapper .owl-carousel .owl-item img {
+    width: auto;
+    max-height: 457px;
+}
+
+.pdpGalleryWrapper .owl-nav {
+    display: flex;
+}
+
+.pdpGalleryWrapper .owl-carousel .owl-nav button.owl-next,
+.pdpGalleryWrapper .owl-carousel .owl-nav button.owl-prev {
+    flex: 1;
+    border: 1px solid #E8E8E8;
+    padding: 5px 10px;
+}
+
+.pdpGalleryWrapper .owl-carousel .owl-nav button.owl-next:focus,
+.pdpGalleryWrapper .owl-carousel .owl-nav button.owl-next:focus-visible,
+.pdpGalleryWrapper .owl-carousel .owl-nav button.owl-prev:focus,
+.pdpGalleryWrapper .owl-carousel .owl-nav button.owl-prev:focus-visible {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.pdpGalleryWrapper .owl-carousel .owl-nav button.owl-next:hover,
+.pdpGalleryWrapper .owl-carousel .owl-nav button.owl-prev:hover {
+    color: #DD1315;
+}
+/* End Of Owl Carousel */
+
 
 .heading.pdp-heading {
     font-size: 26px;
@@ -6034,7 +6107,6 @@ p.inner-text {
 
 .production-pg {
   overflow: hidden;
-  padding-top: 80px;
 }
 
 .production-pg .item {
@@ -6042,6 +6114,10 @@ p.inner-text {
     -ms-flex-align: center;
     align-items: center;
     margin-bottom: 100px;
+}
+
+.production-pg .item:last-child {
+    margin-bottom: 0px;
 }
 
 .production-pg .item .img-wrapper {
@@ -6536,24 +6612,11 @@ p.inner-text {
   border-radius: 8px;
 }
 
-.csr {
-  padding: 40px 0;
-}
+/* CSR Page */
 
-.csr .heading {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 36px;
-  color: #000000;
-  margin-bottom: 10px;
-}
-
-.csr p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: rgba(0, 0, 0, 0.6);
-  margin: 0;
+.csr p,
+.csr-expeniture p {
+    color: #565656;
 }
 
 .csr .sub-heading {
@@ -6564,20 +6627,19 @@ p.inner-text {
   padding: 10px 0;
 }
 
-.csr-expeniture p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  text-align: justify;
-  color: #565656;
-  padding-bottom: 5px;
-  margin: 0;
+.csr-expeniture .item {
+    margin-bottom: 60px;
 }
 
-.csr-expeniture img {
-  -webkit-box-shadow: 85px 50px 111px -29px rgba(255, 195, 0, 0.25);
-          box-shadow: 85px 50px 111px -29px rgba(255, 195, 0, 0.25);
+.csr-expeniture .item:last-child {
+    margin-bottom: 30px;
 }
+
+.csr-expeniture .img-wrapper {
+  -webkit-box-shadow: 44px 45px 58px -29px rgba(255, 195, 0, 0.21);
+          box-shadow: 44px 45px 58px -29px rgba(255, 195, 0, 0.21);
+}
+/* End Of CSR Page */
 
 /*Product listing wrapper*/
 

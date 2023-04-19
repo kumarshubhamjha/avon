@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="{{ sc_file($sc_templateFile.'/css/slick/slick.css')}}">
      
     <link rel="stylesheet" href="{{ sc_file($sc_templateFile.'/css/main.css')}}">
+    <link rel="stylesheet" href="{{ sc_file($sc_templateFile.'/css/responsive.css')}}">
       
     
    
