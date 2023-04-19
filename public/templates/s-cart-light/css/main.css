@@ -6615,8 +6615,20 @@ p.inner-text {
 /* CSR Page */
 
 .csr p,
-.csr-expeniture p {
+.csr-expeniture p,
+.csr-expeniture li {
     color: #565656;
+    margin-bottom: 10px;
+}
+
+.csr p:last-child,
+.csr-expeniture p:last-child,
+.csr-expeniture li:last-child {
+    margin-bottom: 0px;
+}
+
+.csr-expeniture .heading {
+    margin-bottom: 16px;
 }
 
 .csr .sub-heading {
@@ -6629,6 +6641,7 @@ p.inner-text {
 
 .csr-expeniture .item {
     margin-bottom: 60px;
+    align-items: center;
 }
 
 .csr-expeniture .item:last-child {
@@ -6636,9 +6649,16 @@ p.inner-text {
 }
 
 .csr-expeniture .img-wrapper {
+    border-radius: 20px;
+    overflow: hidden;
   -webkit-box-shadow: 44px 45px 58px -29px rgba(255, 195, 0, 0.21);
           box-shadow: 44px 45px 58px -29px rgba(255, 195, 0, 0.21);
 }
+
+.csr-expeniture .item:nth-child(odd) .img-box {
+    order: 2;
+}
+
 /* End Of CSR Page */
 
 /*Product listing wrapper*/

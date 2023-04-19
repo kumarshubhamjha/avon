@@ -141,8 +141,16 @@
 }
 
 @media only screen and (max-width: 1020px) {
+    p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
     .py-60 {
         padding: 40px 0px 60px !important
+    }
+
+    .py-80 {
+        padding: 60px 0px!important
     }
 
     .mb-60 {
@@ -476,12 +484,6 @@
         flex-direction: column;
     }
     /* End Of My Profile Page */
-
-    /* Production Page */
-    .production-pg .item p {
-        font-size: 14px;
-    }
-    /* End Of Production page */
 }
 
 @media only screen and (max-width: 991px) {
@@ -736,6 +738,17 @@
         padding-left: 0px;
     }
     /*End Of About Page*/
+
+
+    /* CSR Page */
+    .csr-expeniture .item .text-box {
+        margin-bottom: 30px;
+    }
+
+    .csr-expeniture .item:nth-child(even) .img-box {
+        order: 2;
+    }
+    /* End Of CSR Page */
 }
 
 @media only screen and (max-width: 767px) {
@@ -998,7 +1011,7 @@
     .production-pg .item {
         margin-bottom: 60px;
     }
-    
+
     .production-pg .item:nth-child(even) .img-box {
         order: 2;
     }
