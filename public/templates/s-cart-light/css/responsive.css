@@ -141,9 +141,17 @@
 }
 
 @media only screen and (max-width: 1020px) {
-    p {
+    p,
+    p.inner-text {
         font-size: 14px;
         line-height: 1.8;
+    }
+    
+    .choices .tab-content .inner-content .btn-order-now,
+    .default-btn,
+    .abtpg-btn .default-btn {
+        font-size: 14px;
+        padding: 10px 20px;
     }
     .py-60 {
         padding: 40px 0px 60px !important
@@ -473,6 +481,10 @@
 
 
     /* About page */
+    .about-history .right-section p {
+        font-size: 14px;
+        line-height: 1.8;
+    }
     .about-banner .inner-content h1 {
         font-size: 28px;
         line-height: 34px;
