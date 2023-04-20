@@ -3,10 +3,10 @@ $(document).ready(function () {
         dots: true,
         nav: true,
         loop: true,
-        autoplay: false,
+        autoplay: true,
         active: true,
         items: 1,
-        autoplayTimeout: 7000,
+        autoplayTimeout: 4000,
         smartSpeed: 800,
     });
 

@@ -432,6 +432,7 @@ header nav.navbar .nav .nav-item .nav-link {
     padding: 0px;
     color: #FFFFFF;
     line-height: 18px;
+    text-transform: capitalize;
 }
 
 header nav.navbar .nav .nav-item .nav-link.active {

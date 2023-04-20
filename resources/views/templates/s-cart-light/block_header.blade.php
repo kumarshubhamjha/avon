@@ -4,7 +4,6 @@
             <div class="container d-flex justify-content-end">
                 <ul>
                     <li><a class="link" href="{{url('avon_square')}}">Avon Square</a></li>
-                    <li><a class="link" href="{{url('about')}}">About</a></li>
                     <li><a class="link" href="#">Contact</a></li>
                     <li><a class="link" href="#"><img src="{{url('img/icon/store.svg')}}" alt="store locator">
                             Store Locator</a></li>
