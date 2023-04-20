@@ -511,6 +511,12 @@
         margin-left: -50px;
     }
     /* End Of career Page */
+
+    /* Avon Square Page */
+    .avon-sq-banner .slider-wrapper {
+        background-size: 65%
+    }
+    /* End Of Avon Square Page */
 }
 
 @media only screen and (max-width: 991px) {
@@ -799,6 +805,45 @@
         overflow-y: unset;
     }
     /* End Of Content Page */
+
+    /* Avon Square Page */
+    .avon-about .img-wrapper {
+        margin-bottom: 15px;
+    }
+    .avon-about .img-wrapper {
+        padding: 10px;
+    }
+
+    .avon-about .img-box {
+        column-gap: 15px;
+    }
+
+    .avon-brands .items::before {
+        display: none;
+    }
+
+    .avon-brands .inner-wrapper::before {
+        width: 100%;
+    }
+
+    .avon-brands .item .left-section {
+        margin-bottom: 15px;
+        padding-right: 15px;
+    }
+
+    .avon-brands .item:nth-child(odd) .left-section {
+        order: 1;
+        padding-left: 15px;
+    }
+
+    .avon-brands .inner-wrapper {
+        padding: 40px 15px;
+    }
+
+    .avon-brands .item .right-section .inner-content {
+        padding: 15px;
+    }
+    /* End Of Avon Square Page */
 }
 
 @media only screen and (max-width: 767px) {
@@ -1097,4 +1142,22 @@
         margin-bottom: 5px;
     }
     /* End Of Content Page */
+    /* Avon Square Page */
+    .avon-about .left-section {
+        margin-bottom: 30px;
+    }
+    .avon-about .img-wrapper {
+        margin-bottom: 15px;
+        max-width: 100%;
+    }
+
+    .avon-about .img-wrapper img {
+        max-width: 100px;
+    }
+
+    .avon-about .img-wrapper.logo {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+    /* Avon Square Page */
 }

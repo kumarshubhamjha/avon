@@ -99,12 +99,12 @@
                         
                         @foreach($data1 as $val)
                         <div class="row item  align-items-center">
-                            <div class="col-md-6 left-section">
+                            <div class="col-lg-6 left-section">
                                 <div class="img-wrapper">
                                     <img src="img/avonsquare/combio.png" alt="cambio" class="img-fluid">
                                 </div>
                             </div>
-                            <div class="col-md-6 right-section">
+                            <div class="col-lg-6 right-section">
                                 <div class="inner-content">
                                     <div class="img-wrapper">
                                         <img src="img/brands-cambio.png" alt="cambio" class="img-fluid">
@@ -117,84 +117,7 @@
                             </div>
                         
                         </div>
-                        
-                      @endforeach
-                        <!--<div class="row item  align-items-center">-->
-                        <!--    <div class="col-md-6 left-section">-->
-                        <!--        <div class="img-wrapper">-->
-                        <!--            <img src="img/avonsquare/cyciux.png" alt="cambio" class="img-fluid">-->
-                        <!--        </div>-->
-                        <!--    </div>-->
-                        <!--    <div class="col-md-6 right-section">-->
-                        <!--        <div class="inner-content">-->
-                        <!--            <div class="img-wrapper">-->
-                        <!--                <img src="img/brands-cyeiux.jpg" alt="cambio" class="img-fluid">-->
-                        <!--            </div>-->
-                        <!--            <p>The flagship store, Avon Square is now open in your city. Visit the store today and explore the diverse product range with world-class mobility solutions at competitive.</p>-->
-                        <!--            <div class="viewall-link">-->
-                        <!--                <a href="#">Visit Website</a>-->
-                        <!--            </div>-->
-                        <!--        </div>-->
-                        <!--    </div>-->
-                        
-                        <!--</div>-->
-                        <!--<div class="row item  align-items-center">-->
-                        <!--    <div class="col-md-6 left-section">-->
-                        <!--        <div class="img-wrapper">-->
-                        <!--            <img src="img/avonsquare/fitness-machine.png" alt="cambio" class="img-fluid">-->
-                        <!--        </div>-->
-                        <!--    </div>-->
-                        <!--    <div class="col-md-6 right-section">-->
-                        <!--        <div class="inner-content">-->
-                        <!--            <div class="img-wrapper">-->
-                        <!--                <img src="img/brands-avon.jpg" alt="cambio" class="img-fluid">-->
-                        <!--            </div>-->
-                        <!--            <p>The flagship store, Avon Square is now open in your city. Visit the store today and explore the diverse product range with world-class mobility solutions at competitive.</p>-->
-                        <!--            <div class="viewall-link">-->
-                        <!--                <a href="#">Visit Website</a>-->
-                        <!--            </div>-->
-                        <!--        </div>-->
-                        <!--    </div>-->
-                        
-                        <!--</div>-->
-                        <!--<div class="row item  align-items-center">-->
-                        <!--    <div class="col-md-6 left-section">-->
-                        <!--        <div class="img-wrapper">-->
-                        <!--            <img src="img/avonsquare/e-world.png" alt="cambio" class="img-fluid">-->
-                        <!--        </div>-->
-                        <!--    </div>-->
-                        <!--    <div class="col-md-6 right-section">-->
-                        <!--        <div class="inner-content">-->
-                        <!--            <div class="img-wrapper">-->
-                        <!--                <img src="img/brands-e-world.jpg" alt="cambio" class="img-fluid">-->
-                        <!--            </div>-->
-                        <!--            <p>The flagship store, Avon Square is now open in your city. Visit the store today and explore the diverse product range with world-class mobility solutions at competitive.</p>-->
-                        <!--            <div class="viewall-link">-->
-                        <!--                <a href="#">Visit Website</a>-->
-                        <!--            </div>-->
-                        <!--        </div>-->
-                        <!--    </div>-->
-                        
-                        <!--</div>-->
-                        <!--<div class="row item  align-items-center">-->
-                        <!--    <div class="col-md-6 left-section">-->
-                        <!--        <div class="img-wrapper">-->
-                        <!--            <img src="img/avonsquare/avon.png" alt="cambio" class="img-fluid">-->
-                        <!--        </div>-->
-                        <!--    </div>-->
-                        <!--    <div class="col-md-6 right-section">-->
-                        <!--        <div class="inner-content">-->
-                        <!--            <div class="img-wrapper">-->
-                        <!--                <img src="img/logo.svg" alt="avon-logo" class="img-fluid">-->
-                        <!--            </div>-->
-                        <!--            <p>The flagship store, Avon Square is now open in your city. Visit the store today and explore the diverse product range with world-class mobility solutions at competitive.</p>-->
-                        <!--            <div class="viewall-link">-->
-                        <!--                <a href="#">Visit Website</a>-->
-                        <!--            </div>-->
-                        <!--        </div>-->
-                        <!--    </div>-->
-                        
-                        <!--</div>-->
+                        @endforeach
                     </div>
 
                     <div class="join-hand text-center">

@@ -5197,6 +5197,7 @@ p.inner-text {
     min-height: 500px;
     display: flex;
     align-items: center;
+    padding: 50px 0px;
 }
 
 .avon-sq-banner .slider-wrapper {
@@ -5392,6 +5393,10 @@ p.inner-text {
     border-radius: 4px;
 }
 
+.avon-brands .item .right-section .inner-content p {
+    color: #565656;
+}
+
 .avon-brands .join-hand {
     position: relative;
 }
@@ -5401,7 +5406,7 @@ p.inner-text {
 }
 
 .avon-brands .join-hand p {
-    color: rgba(0, 0, 0, 0.4);
+    color: #565656;
 }
 
 .avon-brands .join-hand .img-wrapper p {
