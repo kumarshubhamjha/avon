@@ -16,7 +16,7 @@
 <section class="listing-wrapper press-coverage-pg">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 left-section">
+            <div class="col-lg-4 left-section mb-0">
                 <div class="top-wrapper mb-0">
                     <div class="filters d-flex flex-wrap">
                         <a href="#" class="filter clear">Clear All Filters</a>
@@ -44,7 +44,7 @@
                     <!--/.accordion-content-->
                 </div>
             </div>
-            <div class="col-md-8 right-section press-conf items-wrapper">
+            <div class="col-lg-8 right-section press-conf items-wrapper">
                 <div class="heading-wrapper">
                     <div class="heading">Brand Assets</div>
                     <p>Hill highlights streamline scope</p>

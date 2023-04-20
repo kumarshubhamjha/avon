@@ -11,7 +11,7 @@
         </ul>
     </div>
 </section>
-<section class="shipping-policy py-60">
+<section class="shipping-policy content-pg py-60">
     <div class="container">
        {!! $data->content !!}
     </div>

@@ -142,7 +142,8 @@
 
 @media only screen and (max-width: 1020px) {
     p,
-    p.inner-text {
+    p.inner-text,
+    .content-pg .bullet-style li {
         font-size: 14px;
         line-height: 1.8;
     }
@@ -155,6 +156,8 @@
         font-size: 14px;
         padding: 10px 20px;
     }
+
+
     .py-60 {
         padding: 40px 0px 60px !important
     }
@@ -789,6 +792,13 @@
         padding: 20px 32px;
     }
     /* End Of career Page */
+
+    /* Content Page */
+    .press-conf .item {
+        height: auto;
+        overflow-y: unset;
+    }
+    /* End Of Content Page */
 }
 
 @media only screen and (max-width: 767px) {
@@ -1059,4 +1069,32 @@
     .production-pg .item .text-box {
         margin-bottom: 30px;
     }
+
+    /* Content Page */
+    .content-pg .redbox ul::before {
+        display: none;
+    }
+
+    .content-pg .redbox ul {
+        padding: 0;
+    }
+
+    .content-pg .redbox ul li {
+        flex-direction: column;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #FF0000;
+        padding: 15px;
+        margin-bottom: 0px;
+    }
+
+    .content-pg .redbox ul li .left,
+    .content-pg .redbox ul li .right {
+        width: 100%;
+    }
+
+    .content-pg .redbox ul li .left {
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+    /* End Of Content Page */
 }
