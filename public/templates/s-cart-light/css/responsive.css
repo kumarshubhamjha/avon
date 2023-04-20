@@ -149,7 +149,9 @@
     
     .choices .tab-content .inner-content .btn-order-now,
     .default-btn,
-    .abtpg-btn .default-btn {
+    .abtpg-btn .default-btn,
+    .open-position .job-section .apply-btn a,
+    .life-avon .flex-box .career-btn a {
         font-size: 14px;
         padding: 10px 20px;
     }
@@ -163,6 +165,10 @@
 
     .mb-60 {
         margin-bottom: 40px;
+    }
+
+    .listing-wrapper {
+        padding-top: 40px;
     }
     .top-bar {
         display: none;
@@ -496,6 +502,12 @@
         flex-direction: column;
     }
     /* End Of My Profile Page */
+
+    /* Career Page */
+    .life-avon .flex-box img {
+        margin-left: -50px;
+    }
+    /* End Of career Page */
 }
 
 @media only screen and (max-width: 991px) {
@@ -519,8 +531,6 @@
     .top-banner .owl-carousel .owl-dots .owl-dot.active {
         width: 30px
     }
-    
-    
     /*End Of Banners*/
     
     /* Choices */
@@ -670,7 +680,6 @@
     .listing-wrapper .top-wrapper {
         margin-bottom: 15px;
     }
-    
     /*End Of Listing page*/
     
     
@@ -761,6 +770,25 @@
         order: 2;
     }
     /* End Of CSR Page */
+
+    /* Career Page */
+    .life-avon .flex-box img {
+        margin-left: 0px;
+        margin-bottom: 30px;
+    }
+
+    .listing-wrapper.career-pg .left-section {
+        margin-bottom: 0px;
+    }
+    .listing-wrapper .accordion-container {
+        margin-bottom: 30px;
+    }
+
+    .fancybox-content .career-inner-popup .form .career-btn button {
+        font-size: 14px;
+        padding: 20px 32px;
+    }
+    /* End Of career Page */
 }
 
 @media only screen and (max-width: 767px) {

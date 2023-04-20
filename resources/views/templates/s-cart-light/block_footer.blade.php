@@ -2,7 +2,7 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-md-4 item left-section">
+            <div class="col-lg-4 item left-section">
                 <div class="logo-wrapper">
                     <a href="#">
                         <img src="{{  sc_file(sc_store('logo', ($storeId ?? null))) }}" class="img-fluid" alt="logo">
@@ -56,7 +56,7 @@
                     @endif
                 </ul>
             </div>
-            <div class="col-md-2 item">
+            <div class="col-md-3 col-lg-2 item">
                 <div class="title">By Type</div>
                 <ul class="links">
                     <li><a href="#" class="link">Boys Bikes</a></li>
@@ -66,7 +66,7 @@
                     <li><a href="#" class="link">Kids Bikes</a></li>
                 </ul>
             </div>
-            <div class="col-md-2 item">
+            <div class="col-md-3 col-lg-2 item">
                 <div class="title">By Categories</div>
                 <ul class="links">
                     <li><a href="#" class="link">All Terrain Bikes</a></li>
@@ -77,7 +77,7 @@
                     <li><a href="#" class="link">Geared Bikes</a></li>
                 </ul>
             </div>
-            <div class="col-md-2 item">
+            <div class="col-md-3 col-lg-2 item">
                 <div class="title">Company</div>
                 <ul class="links">
                     <li><a href="#" class="link">About</a></li>
@@ -89,7 +89,7 @@
                     <li><a href="#" class="link">Investors</a></li>
                 </ul>
             </div>
-            <div class="col-md-2 item">
+            <div class="col-md-3 col-lg-2 item">
                 <div class="title">Useful Links</div>
                 <ul class="links">
                     <li><a href="#" class="link">Bike Finder</a></li>

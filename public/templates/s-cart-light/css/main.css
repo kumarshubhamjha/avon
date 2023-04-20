@@ -6381,9 +6381,13 @@ p.inner-text {
 
 .open-position .job-section .sub-heading {
   font-weight: 500;
-  font-size: 24px;
-  line-height: 31px;
+  font-size: 20px;
+  line-height: 28px;
   color: #0F1111;
+}
+
+.open-position .job-section p {
+    text-transform: capitalize;
 }
 
 .open-position .job-section ul {
@@ -6588,9 +6592,6 @@ p.inner-text {
 }
 
 .life-avon .flex-box p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
   color: #565656;
 }
 

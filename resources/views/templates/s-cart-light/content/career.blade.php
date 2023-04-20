@@ -13,10 +13,10 @@
     </div>
 </div>
 
-<section class="listing-wrapper">
+<section class="listing-wrapper career-pg">
     <div class="container">
         <div class="row">
-            <div class="col-md-4 left-section">
+            <div class="col-lg-4 left-section">
                 <div class="top-wrapper mb-0">
                     <div class="filters d-flex flex-wrap">
                         <a href="#" class="filter clear">Clear All Filters</a>
@@ -43,7 +43,7 @@
                     <!--/.accordion-content-->
                 </div>
             </div>
-            <div class="col-md-8 right-section open-position items-wrapper">
+            <div class="col-lg-8 right-section open-position items-wrapper">
                 <div class="heading-wrapper">
                     <div class="heading">Open Positions</div>
                     <p>Hill highlights streamline scope</p>
@@ -54,7 +54,7 @@
                    <div class="inner-item">
                         <div class="accordion-title js-accordion-title open">
                             <div class="row">
-                                <div class="col-md-11 left-section">
+                                <div class="col-10 col-md-11 left-section">
                                     <div class="sub-heading-role">{{$val->name}}</div>
                                     <div class="bottom-section">
                                         <div class="detail-wrapper">
@@ -88,9 +88,9 @@
                         <div class="accordion-content active">
                             <div class="job-section">
                                     <div class="sub-heading">Role & Responsibilities</div>
-                                    {!! $val->role !!}
+                                    <p>{!! $val->role !!}</p>
                                     <div class="sub-heading">Job Qualifications</div>
-                                    {!! $val->qualification !!}
+                                    <p>{!! $val->qualification !!}</p>
                                     <div class="apply-btn">
                                         <a href="#details" data-fancybox>APPLY NOW</a>
                                     </div>
@@ -135,7 +135,7 @@
                       <div class="inner-item">
                         <div class="accordion-title js-accordion-title open">
                             <div class="row">
-                                <div class="col-md-11 left-section">
+                                <div class="col-10 col-md-11 left-section">
                                     <div class="sub-heading-role">{{$itm->name}}</div>
                                     <div class="bottom-section">
                                         <div class="detail-wrapper">
@@ -169,9 +169,9 @@
                         <div class="accordion-content active">
                             <div class="job-section">
                                     <div class="sub-heading">Role & Responsibilities</div>
-                                    {!! $itm->role !!}
+                                    <p>{!! $itm->role !!}</p>
                                     <div class="sub-heading">Job Qualifications</div>
-                                    {!! $itm->qualification !!}
+                                    <p>{!! $itm->qualification !!}</p>
                                     <div class="apply-btn">
                                         <a href="#details" data-fancybox>APPLY NOW</a>
                                     </div>
@@ -221,10 +221,10 @@
     <div class="container">
         <div class="row">
             <div class="flex-box">
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <img src="img/new/career/lifeatavon.webp" alt="life at avon" class="img-fluid">
                 </div>
-                <div class="col-md-6">
+                <div class="col-lg-6">
                     <div class="heading">Life at Avon</div>
                     <div class="title">Fastworks weeks web hit paradigm at jumping.</div>
                     <p>Digital who's intersection were air waste field. Ensure optimal please shift keywords must. Anyway then offline zoom protocol criticality economy. Enable web define back win-win-win marketing boil incentivization customer.</p>
