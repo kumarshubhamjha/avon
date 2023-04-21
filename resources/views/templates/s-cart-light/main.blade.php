@@ -170,17 +170,17 @@
         <div class="sc-overlay"><i class="fa fa-spinner fa-pulse fa-5x fa-fw "></i></div>
     </div>
 
-    <script src="{{ sc_file($sc_templateFile.'/js/core.min.js')}}"></script>
+    <script src="{{ sc_file($sc_templateFile.'/js/core.min.js')}}" defer></script>
     <!--<script src="{{ sc_file($sc_templateFile.'/js/script.js')}}"></script>-->
-    <script src="{{ sc_file($sc_templateFile.'/js/bootstrap.min.js')}}"></script>
-    <script src="{{ sc_file($sc_templateFile.'/js/popper.min.js')}}"></script>
+    <script src="{{ sc_file($sc_templateFile.'/js/bootstrap.min.js')}}" defer></script>
+    <script src="{{ sc_file($sc_templateFile.'/js/popper.min.js')}}" defer></script>
    
     <!-- <script src="{{ sc_file($sc_templateFile.'/js/slick.min.js')}}"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" defer></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="{{ sc_file($sc_templateFile.'/js/custom.js')}}"></script>
-     <script src="{{ sc_file($sc_templateFile.'/css/slick/slick.min.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script src="{{ sc_file($sc_templateFile.'/js/custom.js')}}" defer></script>
+     <script src="{{ sc_file($sc_templateFile.'/css/slick/slick.min.js')}}" defer></script>
 
     <!-- js default for item s-cart -->
     @include($sc_templatePath.'.common.js')
