@@ -22,9 +22,9 @@ $banners = $modelBanner->start()->setType('banner')->getData()
                                     </div>
                                     <div class="text-wrapper">
                                         <div class="top">
-                                            <span class="flat">
+                                            <div class="flat">
                                                 Flat
-                                            </span>
+                                            </div>
                                             <div class="amount">15%</div>
                                         </div>
                                         <div class="bottom">
