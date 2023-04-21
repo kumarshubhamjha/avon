@@ -8,8 +8,10 @@ $banners = $modelBanner->start()->setType('banner')->getData()
      @foreach ($banners as $key => $banner)
         <div class="item">
             <div class="inner-content">
-                <img src="{{ sc_file($banner->image) }}" alt="banner-img" class="desktop">
-                <img src="{{url('img/banner-mobile.jpg')}}" alt="banner-img" class="mobile">
+                <picture>
+                    <source media="(min-width:768px)" srcset="{{ sc_file($banner->image) }}">
+                    <img src="{{url('img/banner-mobile.jpg')}}" alt="banner">
+                </picture>
                 <div class="content-wrapper">
                     <div class="container">
                         <div class="row">

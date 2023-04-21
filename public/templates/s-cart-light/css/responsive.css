@@ -823,7 +823,7 @@
     }
 
     .avon-brands .inner-wrapper::before {
-        width: 100%;
+        width: 75%;
     }
 
     .avon-brands .item .left-section {
@@ -842,6 +842,19 @@
 
     .avon-brands .item .right-section .inner-content {
         padding: 15px;
+    }
+
+    .avon-brands .join-hand {
+        width: 70%;
+        margin: auto;
+    }
+
+    .join-now.contactus-wrapper::before {
+        display: none;
+    }
+
+    .join-now.contactus-wrapper .left-section {
+        margin-bottom: 30px;
     }
     /* End Of Avon Square Page */
 }
@@ -1158,6 +1171,10 @@
     .avon-about .img-wrapper.logo {
         max-width: 100%;
         margin-bottom: 15px;
+    }
+
+    .join-now.contactus-wrapper form {
+        width: 100%;
     }
     /* Avon Square Page */
 }

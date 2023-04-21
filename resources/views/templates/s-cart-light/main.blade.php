@@ -143,6 +143,9 @@
                     @show
                 </div>
             </div>
+            <div class="compare-btn">
+                <a href="#" title="Compare Now"><img src="{{url('img/icon/flip-product.png')}}" alt="compare Product"></a>
+            </div>
         </section>
         @show
         {{-- //Block main --}}

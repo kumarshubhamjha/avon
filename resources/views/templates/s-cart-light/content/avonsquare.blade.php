@@ -142,7 +142,7 @@
 <section class="contactus-wrapper join-now py-80">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 left-section">
+            <div class="col-lg-6 left-section">
                 <div class="heading-wrapper">
                     <div class="heading">Ask now to join</div>
                     <p>Reach move previous seat beforehand</p>
@@ -167,14 +167,14 @@
                     <button type="submit" class="btn default-btn">Submit</button>
                 </form>
             </div>
-            <div class="col-md-6 right-section">
+            <div class="col-lg-6 right-section">
                 <div class="heading-wrapper">
                     <div class="heading">Store Presence</div>
                     <p>Our stores are present in 5 cities right now</p>
                 </div>
 
                 <div class="row">
-                    <div class="col-md-4 item">
+                    <div class="col-6 col-md-4 item">
                         <div class="img-wrapper">
                             <img src="img/avonsquare/store.jpg" alt="store" class="img-fluid">
                             <div class="city-name">
@@ -182,7 +182,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 item">
+                    <div class="col-6 col-md-4 item">
                         <div class="img-wrapper">
                             <img src="img/avonsquare/store.jpg" alt="store" class="img-fluid">
                             <div class="city-name">
@@ -190,7 +190,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 item">
+                    <div class="col-6 col-md-4 item">
                         <div class="img-wrapper">
                             <img src="img/avonsquare/store.jpg" alt="store" class="img-fluid">
                             <div class="city-name">
@@ -198,7 +198,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 item">
+                    <div class="col-6 col-md-4 item">
                         <div class="img-wrapper">
                             <img src="img/avonsquare/store.jpg" alt="store" class="img-fluid">
                             <div class="city-name">
@@ -206,7 +206,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 item">
+                    <div class="col-6 col-md-4 item">
                         <div class="img-wrapper">
                             <img src="img/avonsquare/store.jpg" alt="store" class="img-fluid">
                             <div class="city-name">
@@ -214,7 +214,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 item">
+                    <div class="col-6 col-md-4 item">
                         <div class="viewall-link">
                             <a href="#">View All</a>
                         </div>

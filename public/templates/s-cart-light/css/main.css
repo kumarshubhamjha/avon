@@ -796,6 +796,19 @@ header .myaccount-popup .inner-content ul.profile {
 .main-banner.top-banner .item .inner-content .content-wrapper .inner-content {
     padding: 85px 0px 40px;
 }
+
+.main-banner.top-banner.img-only .item .inner-content .content-wrapper .inner-content {
+    padding: 40px 0px 40px;
+}
+
+.main-banner.top-banner.img-only .item > .inner-content  img{
+    height: 150px;
+    object-fit: cover;
+}
+
+.main-banner.top-banner.img-only .inner-content .content-wrapper {
+    bottom: 0;
+}
 /* End Of Main Banner */
 
 .offers .items {
@@ -1830,6 +1843,30 @@ footer .copyright p {
 }
 
 /* Listing Page */
+
+.compare-btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    right: 0px;
+}
+
+.compare-btn a {
+    padding: 20px 15px;
+    background: #DD1315;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.compare-btn a img {
+    filter: brightness(0) invert(1)
+}
+
 .listingPg-banner {
     padding: 55px 0px;
     background: url(../../../img/list-bg-1.jpg) top center no-repeat;
@@ -5418,8 +5455,19 @@ p.inner-text {
 }
 
 .join-now.contactus-wrapper {
-    background: url(../../../img/avonsquare/join-us.jpg) left bottom no-repeat;
-    background-size: 40%;
+    position: relative;
+}
+
+.join-now.contactus-wrapper::before {
+    content: '';
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    bottom: 0px;
+    background: #f2f2f2;
+
 }
 
 .join-now.contactus-wrapper form {
