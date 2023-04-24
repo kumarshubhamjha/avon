@@ -77,32 +77,17 @@ $news = $modelNews->start()->setlimit(sc_config('item_top'))->getData();
             <div class="heading">Our Brands</div>
             <p>Explore our realm</p>
         </div>
-        <div class="w-100 owl-carousel" id="brands-sec-slider">
-            <div class="item">
-                <div class="image">
-                    <img src="{{url('img/brands-avon.jpg')}}" alt="">
+        <?php $allBrand = App\Helper\Helpers::getHomeBrand(); ?>
+        @if(count($allBrand))
+        <div class="w-100 owl-carousel" id="press-coverage">
+            @foreach($allBrand as $brand)
+                <div class="item">
+                    <div class="image">
+                        <img src="{{sc_file($brand->image)}}" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="item">
-                <div class="image">
-                    <img src="{{url('img/brands-e-world.jpg')}}" alt="">
-                </div>
-            </div>
-            <div class="item">
-                <div class="image">
-                    <img src="{{url('img/brands-cyeiux.jpg')}}" alt="">
-                </div>
-            </div>
-            <div class="item">
-                <div class="image">
-                    <img src="{{url('img/brands-connect.jpg')}}" alt="">
-                </div>
-            </div>
-            <div class="item">
-                <div class="image">
-                    <img src="{{url('img/brands-avon.jpg')}}" alt="">
-                </div>
-            </div>
+            @endforeach
         </div>
+        @endif
     </div>
 </section>

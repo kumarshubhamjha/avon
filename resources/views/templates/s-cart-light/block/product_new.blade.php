@@ -229,18 +229,18 @@ $press = DB::table('sc_press')->where('status',1)->take(10)->get();
             <div class="heading">Press Coverage</div>
             <p>All eyes are on us.</p>
         </div>
-        <div class="w-100 owl-carousel" id="press-coverage">
-            @foreach($press as $data)
-            <div class="item">
-                <div class="image">
-                    <img src="{{sc_file($data->image)}}" alt="">
+                <?php $allPressCat = App\Helper\Helpers::getHomePressCoverage(); ?>
+                @if(count($allPressCat))
+                <div class="w-100 owl-carousel" id="press-coverage">
+                    @foreach($allPressCat as $pressCat)
+                        <div class="item">
+                            <div class="image">
+                                <img src="{{sc_file($pressCat->image)}}" alt="">
+                            </div>
+                        </div>
+                    @endforeach
                 </div>
-            </div>
-            @endforeach
-
-
-
-        </div>
+                @endif
         <div class="viewall-link text-center mt-5">
             <a href="#">View All</a>
         </div>

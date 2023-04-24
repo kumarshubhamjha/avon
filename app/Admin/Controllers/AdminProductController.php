@@ -557,6 +557,9 @@ class AdminProductController extends RootAdminController
             'feature'          => $data['feature'] ?? '',
             'feature_heading'          => $data['feature_heading'] ?? '',
             'feature_sub_heading'          => $data['feature_sub_heading'] ?? '',
+            'pre_feature_content'          => $data['pre_feature_content'] ?? '',
+            'pre_feature_heading'          => $data['pre_feature_heading'] ?? '',
+            'pre_feature_second_heading'          => $data['pre_feature_second_heading'] ?? '',
             'faq_question'          => $data['faq_question'] ?? '',
             'faq_answer'          => $data['faq_answer'] ?? '',
             'tax_id'         => $data['tax_id'] ?? "",
@@ -908,6 +911,9 @@ class AdminProductController extends RootAdminController
         $downloadPath    = $data['download_path'] ?? '';
         $dataUpdate = [
             'image'        => $data['image'] ?? '',
+            'pre_feature_content'          => $data['pre_feature_content'] ?? '',
+            'pre_feature_heading'          => $data['pre_feature_heading'] ?? '',
+            'pre_feature_second_heading'          => $data['pre_feature_second_heading'] ?? '',
             'feature'          => $data['feature'] ?? '',
             'feature_heading'          => $data['feature_heading'] ?? '',
             'feature_sub_heading'          => $data['feature_sub_heading'] ?? '',

@@ -1,0 +1,6 @@
+[2023-04-19 12:05:27] local.ERROR: 2023-04-19 12:05:27 (Asia/Kolkata):
+#SC003::Message: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it - Line: 70 - File: F:\wamp64\www\git\avon\vendor\laravel\framework\src\Illuminate\Database\Connectors\Connector.php
+  
+[2023-04-19 12:50:30] local.ERROR: 2023-04-19 12:50:30 (Asia/Kolkata):
+#SC005::Message: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'stagingibeesmedi_avon.sc_shop_language' doesn't exist (SQL: select * from `sc_shop_language` where `status` = 1) - Line: 760 - File: F:\wamp64\www\git\avon\vendor\laravel\framework\src\Illuminate\Database\Connection.php
+  

@@ -119,7 +119,7 @@
                                 <textarea id="{{ $code }}__content" class="editor"
                                     name="descriptions[{{ $code }}][content]">
                                         {!! old('descriptions.'.$code.'.content') !!}
-                                    </textarea>
+                                </textarea>
                                 @if ($errors->has('descriptions.'.$code.'.content'))
                                 <span class="form-text">
                                     <i class="fa fa-info-circle"></i>
@@ -272,11 +272,85 @@
 
                         </div>
                         {{-- //images --}}
+
                         
-                        {{-- List product Features --}}
 
 
 <hr class="kind ">
+                        
+                        {{-- List product Features --}}
+
+                        <div
+                            class="form-group row {{ $errors->has('pre_feature_heading') ? ' text-red' : '' }}">
+                            <label for="pre_feature_heading"
+                                class="col-sm-2 col-form-label">Feature Heading <span class="seo" title="SEO"><i class="fa fa-coffee" aria-hidden="true"></i></span>
+                            </label>
+                            <div class="col-sm-8">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-pencil-alt"></i></span>
+                                    </div>
+                                    <input type="text" id="pre_feature_heading" name="pre_feature_heading"
+                                        value="{{ old('pre_feature_heading') }}"
+                                        class="form-control input-sm {{ 'pre_feature_heading' }}" placeholder="" />
+                                </div>
+                                @if ($errors->has('pre_feature_heading'))
+                                <span class="form-text">
+                                    <i class="fa fa-info-circle"></i>
+                                    {{ $errors->first('pre_feature_heading') }}
+                                </span>
+                                @else
+                                    <span class="form-text">
+                                        <i class="fa fa-info-circle"></i> {{ sc_language_render('admin.max_c',['max'=>200]) }}
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div
+                            class="form-group row {{ $errors->has('pre_feature_second_heading') ? ' text-red' : '' }}">
+                            <label for="pre_feature_second_heading"
+                                class="col-sm-2 col-form-label">Feature Second Heading <span class="seo" title="SEO"><i class="fa fa-coffee" aria-hidden="true"></i></span>
+                            </label>
+                            <div class="col-sm-8">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text"><i class="fas fa-pencil-alt"></i></span>
+                                    </div>
+                                    <input type="text" id="pre_feature_second_heading" name="pre_feature_second_heading"
+                                        value="{{ old('pre_feature_second_heading') }}"
+                                        class="form-control input-sm {{ 'pre_feature_second_heading' }}" placeholder="" />
+                                </div>
+                                @if ($errors->has('pre_feature_second_heading'))
+                                <span class="form-text">
+                                    <i class="fa fa-info-circle"></i>
+                                    {{ $errors->first('pre_feature_second_heading') }}
+                                </span>
+                                @else
+                                    <span class="form-text">
+                                        <i class="fa fa-info-circle"></i> {{ sc_language_render('admin.max_c',['max'=>200]) }}
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group row kind  {{ $errors->has('pre_feature_content') ? ' text-red' : '' }}">
+                            <label for="pre_feature_content" class="col-sm-2 col-form-label">
+                                Feature Content
+                            </label>
+                            <div class="col-sm-8">
+                                <textarea id="pre_feature_content" class="editor"
+                                    name="pre_feature_content">
+                                        {!! old('pre_feature_content') !!}
+                                </textarea>
+                                @if ($errors->has('pre_feature_content'))
+                                <span class="form-text">
+                                    <i class="fa fa-info-circle"></i>
+                                    {{ $errors->first('pre_feature_content') }}
+                                </span>
+                                @endif
+                            </div>
+                        </div>
 <div class="form-group kind  row">
     <label for="image" class="col-sm-2 col-form-label">
         <label>Product Features</label>

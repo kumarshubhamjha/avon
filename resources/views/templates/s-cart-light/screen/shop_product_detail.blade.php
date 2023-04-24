@@ -81,10 +81,10 @@ $layout_page = shop_product_detail
                  @if($product->feature_heading || $product->feature_sub_heading || $product->feature)
                 <section class="pdp-spec py-60">
                     <div class="heading-wrapper">
-                        <div class="heading">Know Your Bike</div>
-                        <p>We have wide variety for your needs.</p>
+                        <div class="heading">{{ $product->pre_feature_heading }}</div>
+                        <p>{{ $product->pre_feature_second_heading }}</p>
                     </div>
-                    <p class="inner-text">Can comms should watches economy inclusion. Beforehand just squad practices assassin tentative long support beforehand.</p>
+                    <p class="inner-text">{!! $product->pre_feature_content !!}</p>
                    
                     <ul class="items">
                         <li class="item">

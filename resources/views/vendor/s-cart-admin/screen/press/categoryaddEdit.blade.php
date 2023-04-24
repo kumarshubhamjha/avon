@@ -76,6 +76,34 @@
                                     @endif
                                 </div>
                             </div>
+
+                            <div class="form-group  row {{ $errors->has('image') ? ' text-red' : '' }}">
+                                <label for="image" class="col-sm-2 col-form-label">Image</label>
+                                <div class="col-sm-8">
+                                    <div class="input-group">
+                                        <input type="text" id="image" name="image"
+                                            value="{{ old('image', $data['image'] ?? '') }}" class="form-control image"
+                                            placeholder="" />
+                                        <div class="input-group-append">
+                                            <a data-input="image" data-preview="preview_image" data-type="banner"
+                                                class="btn btn-primary lfm">
+                                                <i class="fa fa-image"></i>
+                                                {{ sc_language_render('product.admin.choose_image') }}
+                                            </a>
+                                        </div>
+                                    </div>
+                                    @if ($errors->has('image'))
+                                        <span class="form-text">
+                                            <i class="fa fa-info-circle"></i> {{ $errors->first('image') }}
+                                        </span>
+                                    @endif
+                                    <div id="preview_image" class="img_holder">
+                                        @if (old('image', $data['image'] ?? ''))
+                                            <img src="{{ sc_file(old('image', $data['image'] ?? '')) }}">
+                                        @endif
+                                    </div>
+                                </div>
+                            </div>
                             
                             
                             

@@ -36,6 +36,7 @@
                     <th>No</th>
                     
                     <th>Title</th>
+                    <th>Image</th>
                     <th>Date</th>
                     <th>Sort</th>
                     <th>Status</th>
@@ -63,6 +64,11 @@
                         data: 'title',
                         name: 'title'
                     },
+                   
+                   {
+                       data: 'image',
+                       name: 'image'
+                   },
                     {
                         data: 'date',
                         name: 'date'

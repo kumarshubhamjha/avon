@@ -127,6 +127,7 @@ class AdminPressController extends BaseController
         $dataInsert = [
              'title'    => $data['title'],
               'keyword'    => $data['keyword'],
+              'image'    => $data['image'],
               'date'    => $data['date'],
             'status'   => empty($data['status']) ? 0 : 1,
             'sort'     => (int) $data['sort'],
