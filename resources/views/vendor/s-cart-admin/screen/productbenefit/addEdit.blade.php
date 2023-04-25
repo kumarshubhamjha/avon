@@ -9,7 +9,7 @@
 
                     <div class="card-tools">
                         <div class="btn-group float-right mr-5">
-                            <a href="{{ sc_route_admin('offer') }}" class="btn  btn-flat btn-default" title="List"><i
+                            <a href="{{ sc_route_admin('productbenefits') }}" class="btn  btn-flat btn-default" title="List"><i
                                     class="fa fa-list"></i><span class="hidden-xs">
                                     {{ sc_language_render('admin.back_list') }}</span></a>
                         </div>
@@ -26,8 +26,8 @@
 
                           
                             
-                                <div class="form-group  row {{ $errors->has('title') ? ' text-red' : '' }}">
-                                <label for="name" class="col-sm-2 col-form-label">Offer name</label>
+                            <div class="form-group  row {{ $errors->has('title') ? ' text-red' : '' }}">
+                                <label for="name" class="col-sm-2 col-form-label">Title</label>
                                 <div class="col-sm-8">
                                     <div class="input-group">
                                         <div class="input-group-prepend">
@@ -35,68 +35,43 @@
                                                 <span class="input-group-text"><i class="fas fa-pencil-alt"></i></span>
                                             </div>
                                         </div>
-                                        
-                                        
                                         <input type="text" id="title" name="title"
-                                            value="{{ old() ? old('title') : $data['title'] ?? '' }}" class="form-control"
-                                            placeholder="" />
+                                        value="{{ old() ? old('title') : $data['title'] ?? '' }}" class="form-control"
+                                        placeholder="" />
                                     </div>
                                     @if ($errors->has('title'))
                                         <span class="form-text">
-                              
+                            
                                         </span>
                                     @endif
                                 </div>
                             </div>
 
-                                <div class="form-group  row {{ $errors->has('image') ? ' text-red' : '' }}">
-                                    <label for="image" class="col-sm-2 col-form-label">Offer Image</label>
-                                    <div class="col-sm-8">
-                                        <div class="input-group">
-                                            <input type="text" id="image" name="image"
-                                                value="{{ old('image', $data['image'] ?? '') }}" class="form-control image"
-                                                placeholder="" />
-                                            <div class="input-group-append">
-                                                <a data-input="image" data-preview="preview_image" data-type="banner"
-                                                    class="btn btn-primary lfm">
-                                                    <i class="fa fa-image"></i>
-                                                    {{ sc_language_render('product.admin.choose_image') }}
-                                                </a>
-                                            </div>
-                                        </div>
-                                        @if ($errors->has('image'))
-                                            <span class="form-text">
-                                                <i class="fa fa-info-circle"></i> {{ $errors->first('image') }}
-                                            </span>
-                                        @endif
-                                        <div id="preview_image" class="img_holder">
-                                            @if (old('image', $data['image'] ?? ''))
-                                                <img src="{{ sc_file(old('image', $data['image'] ?? '')) }}">
-                                            @endif
-                                        </div>
-                                    </div>
-                                </div>
-                        
-                            
-                            
-                             <div class="form-group  row {{ $errors->has('desp') ? ' text-red' : '' }}">
-                                <label for="name" class="col-sm-2 col-form-label">Offer Content</label>
-                                <div class="col-sm-6">
+                            <div class="form-group  row {{ $errors->has('image') ? ' text-red' : '' }}">
+                                <label for="image" class="col-sm-2 col-form-label">Image</label>
+                                <div class="col-sm-8">
                                     <div class="input-group">
-                                        <div class="input-group-prepend">
+                                        <input type="text" id="image" name="image"
+                                            value="{{ old('image', $data['image'] ?? '') }}" class="form-control image"
+                                            placeholder="" />
+                                        <div class="input-group-append">
+                                            <a data-input="image" data-preview="preview_image" data-type="banner"
+                                                class="btn btn-primary lfm">
+                                                <i class="fa fa-image"></i>
+                                                {{ sc_language_render('product.admin.choose_image') }}
+                                            </a>
                                         </div>
-                                        
-                                        
-                                        <textarea id="desp" class="editor"
-                                    name="desp">
-                                        {{ old() ? old('desp') : $data['desp'] ?? '' }}
-                                    </textarea>
                                     </div>
-                                    @if ($errors->has('desp'))
+                                    @if ($errors->has('image'))
                                         <span class="form-text">
-                              
+                                            <i class="fa fa-info-circle"></i> {{ $errors->first('image') }}
                                         </span>
                                     @endif
+                                    <div id="preview_image" class="img_holder">
+                                        @if (old('image', $data['image'] ?? ''))
+                                            <img src="{{ sc_file(old('image', $data['image'] ?? '')) }}">
+                                        @endif
+                                    </div>
                                 </div>
                             </div>
                             

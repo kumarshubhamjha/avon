@@ -8,6 +8,8 @@ use App\Http\Controllers\AboutController;
 use App\Admin\Controllers\AdminSqureController;
 use App\Http\Controllers\AvonSquareController;
 use App\Admin\Controllers\AdminOfferController;
+use App\Admin\Controllers\AdminProductTestimonialController;
+use App\Admin\Controllers\AdminProductBenefitController;
 
 use App\Admin\Controllers\AdminBlogController;
 use App\Admin\Controllers\AdminPressController;
@@ -179,6 +181,19 @@ Route::group([
     Route::post('offer/store-update', [AdminOfferController::class,'storeUpdate'])->name('offer.storeUpdate');
     Route::get('offer/delete/{id}', [AdminOfferController::class,'delete'])->name('offer.delete');
 
+    //product testimonials
+    Route::get('producttestimonial', [AdminProductTestimonialController::class,'index'])->name('producttestimonial');
+    Route::get('producttestimonial/add-edit', [AdminProductTestimonialController::class,'addEdit'])->name('producttestimonial.addEdit');
+    Route::get('producttestimonial/add-edit/{id}', [AdminProductTestimonialController::class,'addEdit'])->name('producttestimonial.addEdit');
+    Route::post('producttestimonial/store-update', [AdminProductTestimonialController::class,'storeUpdate'])->name('producttestimonial.storeUpdate');
+    Route::get('producttestimonial/delete/{id}', [AdminProductTestimonialController::class,'delete'])->name('producttestimonial.delete');
+
+    //product benefits
+    Route::get('productbenefits', [AdminProductBenefitController::class,'index'])->name('productbenefits');
+    Route::get('productbenefits/add-edit', [AdminProductBenefitController::class,'addEdit'])->name('productbenefits.addEdit');
+    Route::get('productbenefits/add-edit/{id}', [AdminProductBenefitController::class,'addEdit'])->name('productbenefits.addEdit');
+    Route::post('productbenefits/store-update', [AdminProductBenefitController::class,'storeUpdate'])->name('productbenefits.storeUpdate');
+    Route::get('productbenefits/delete/{id}', [AdminProductBenefitController::class,'delete'])->name('productbenefits.delete');
 
 
 
