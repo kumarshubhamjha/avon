@@ -22,7 +22,11 @@ class AdminOfferController extends BaseController
                                '<a href="'.sc_route_admin("offer.delete",$row["id"]).'"class="edit btn btn-danger btn-sm">Delete</a>';
                         return $btn;
                     })
-                    ->rawColumns(['action'])
+                    ->addColumn('image', function($row){
+                        $image = '<img width="50px" height="50px" src="'. sc_file(old('image', $row['image'] ?? '')) .'">';
+                        return $image;
+                    })
+                    ->rawColumns(['action', 'image'])
                     ->make(true);
         }
         return view('s-cart-admin::'.'screen.offer.offer');
@@ -50,6 +54,7 @@ class AdminOfferController extends BaseController
            
             'title'    => $data['title'],
               'desp'    => $data['desp'],
+              'image'    => $data['image'],
             'status'   => empty($data['status']) ? 0 : 1,
             'sort'     => (int) $data['sort'],
         ];

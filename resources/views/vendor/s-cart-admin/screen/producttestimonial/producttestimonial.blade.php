@@ -15,10 +15,10 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header with-border">
-                    <h2 class="card-title">{{ $title_description ?? 'Offers' }}</h2>
+                    <h2 class="card-title">{{ $title_description ?? 'Product Testimonials' }}</h2>
                     <div class="card-tools">
                         <div class="btn-group float-right mr-5">
-                            <a href="{{ sc_route_admin('offer.addEdit','') }}" 
+                            <a href="{{ sc_route_admin('producttestimonial.addEdit','') }}" 
                                 class="btn  btn-flat btn-default" title="List">
                                 <i class="fa fa-plus"></i>
                                 <span class="hidden-xs">{{ sc_language_render('Add') }}</span>
@@ -34,9 +34,10 @@
             <thead>
                 <tr>
                     <th>No</th>
-                    <th>Name</th>
+                    <th>Author</th>
+                    <th>Location</th>
                     <th>Image</th>
-                   
+                    <th>Review</th>
                     <th>Sort</th>
                     <th>Status</th>
                     <th width="100px">Action</th>
@@ -53,18 +54,26 @@
                 
                 processing: true,
                 serverSide: true,
-                ajax: "{{ sc_route_admin('offer') }}",
+                ajax: "{{ sc_route_admin('producttestimonial') }}",
                 columns: [{
                         data: 'id',
                         name: 'id'
                     },
                     {
-                        data: 'title',
-                        name: 'title'
+                        data: 'author',
+                        name: 'author'
+                    },
+                    {
+                        data: 'location',
+                        name: 'location'
                     },
                     {
                         data: 'image',
                         name: 'image'
+                    },
+                    {
+                        data: 'review',
+                        name: 'review'
                     },
                    
                     {

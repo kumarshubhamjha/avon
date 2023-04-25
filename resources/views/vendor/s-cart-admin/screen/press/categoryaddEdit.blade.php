@@ -29,7 +29,7 @@
 
 
 
-                  <div class="form-group  row {{ $errors->has('title') ? ' text-red' : '' }}">
+                            <div class="form-group  row {{ $errors->has('title') ? ' text-red' : '' }}">
                                 <label for="name" class="col-sm-2 col-form-label">Title</label>
                                 <div class="col-sm-8">
                                     <div class="input-group">
