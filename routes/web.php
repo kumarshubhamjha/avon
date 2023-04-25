@@ -25,6 +25,9 @@ use App\Http\Controllers\CareerController;
 use App\Admin\Controllers\AdminCareerController;
 use App\Http\Controllers\BrandController;
 use App\Admin\Controllers\AdminAssectBrandController;
+use App\Http\Controllers\MapController;
+use App\Http\Controllers\AdminFilterController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -175,6 +178,14 @@ Route::group([
     Route::get('offer/add-edit/{id}', [AdminOfferController::class,'addEdit'])->name('offer.addEdit');
     Route::post('offer/store-update', [AdminOfferController::class,'storeUpdate'])->name('offer.storeUpdate');
     Route::get('offer/delete/{id}', [AdminOfferController::class,'delete'])->name('offer.delete');
+
+
+
+
+    
+
+
+    
 });
 
 
@@ -203,4 +214,8 @@ Route::get('csr', [AboutController::class,'csr'])->name('csr.csr');
 Route::get('brandassets', [BrandController::class,'index'])->name('index.brandassets');
 
 
+Route::get('/search', [MapController::class,'search']);
+Route::get('/map', [MapController::class,'map']);
 
+
+Route::post('filter', [AdminFilterController::class,'index'])->name('filter.index');

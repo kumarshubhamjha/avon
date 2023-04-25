@@ -35,7 +35,7 @@ class AppConfig extends ConfigDefault
         $this->version = $config['version'];
         $this->auth = $config['auth'];
         $this->link = $config['link'];
-    }
+    } 
 
     public function install()
     {
