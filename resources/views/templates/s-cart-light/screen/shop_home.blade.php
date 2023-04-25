@@ -23,7 +23,7 @@ Use paginate: $products->appends(request()->except(['page','_token']))->links()
 
     <!-- Product list -->
     <div class="trending-product common-slider-btn">
-        <div class="row products">
+        <div class="row products" id='productlist'>
             <!--Product Item-->
              @foreach ($products as $key => $product)
             <div class="col-md-6 col-lg-6 col-xl-4">

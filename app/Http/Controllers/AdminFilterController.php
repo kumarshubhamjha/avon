@@ -19,7 +19,8 @@ class AdminFilterController extends Controller
        
        
 
-        $value1 = ShopProduct::get();
+        $value1 =  $products = (new ShopProduct)
+        ->getData();
      
         $value = json_decode(json_encode($value1,true));
         //dd($value);
