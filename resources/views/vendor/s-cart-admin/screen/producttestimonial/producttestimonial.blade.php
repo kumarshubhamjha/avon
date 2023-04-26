@@ -42,6 +42,7 @@
                     <th>Review</th>
                     <th>Sort</th>
                     <th>Status</th>
+                    <th>Verified</th>
                     <th width="100px">Action</th>
                 </tr>
             </thead>
@@ -93,6 +94,10 @@
                     {
                         data: 'status',
                         name: 'status'
+                    },
+                    {
+                        data: 'verified',
+                        name: 'verified'
                     },
                     {
                         data: 'action',

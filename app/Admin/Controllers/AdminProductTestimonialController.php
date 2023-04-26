@@ -64,6 +64,7 @@ class AdminProductTestimonialController extends BaseController
               'review'    => $data['review'],
               'image'    => $data['image'],
             'status'   => empty($data['status']) ? 0 : 1,
+            'verified'   => empty($data['verified']) ? 0 : 1,
             'sort'     => (int) $data['sort'],
         ];
         if($request->has('id') && ($data['id'] != null) && ($data['id'] != '')){
