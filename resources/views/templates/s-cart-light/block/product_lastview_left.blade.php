@@ -52,6 +52,41 @@
                 </ul>
             </div>
         </div>
+
+
+ <!-- <div class="item">
+            <div class="accordion-title js-accordion-title">
+                <div class="img-wrapper">
+                    <img class="img-fluid" src="{{url('img/icon/listing/review.svg')}}" alt="Review">
+                </div>
+                <p>Review</p>
+            </div>
+            <div class="accordion-content">
+                <ul>
+                    <li>
+                    <input type="radio" id="radio1" name="review" value="1"><label>Review 1</label>
+                      
+                    </li>
+                    <li>
+                    <input type="radio" id="radio2" name="review" value="2"><label>Review 2</label>
+                    </li>
+                    <li>
+                    <input type="radio" id="radio3" name="review" value="3"><label>Review 3</label>
+                    </li>
+                    <li>
+                    <input type="radio" id="radio4" name="review" value="4"><label>Review 4</label>
+                    </li>
+                    <li>
+                    <input type="radio" id="radio5" name="review" value="5"><label>Review 5</label>
+                    </li>
+                </ul>
+            </div>
+        </div>  -->
+       
+
+
+
+
 </form>
         <!--/.accordion-content-->
 

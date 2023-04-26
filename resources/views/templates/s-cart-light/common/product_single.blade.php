@@ -37,9 +37,16 @@
             @php
             $data= DB::table('sc_shop_shoppingcart')->get();
             @endphp
+            @guest
+            <a href="{{ sc_route('login') }}" target="_blank"> <button class="button button-secondary button-zakaria">
+                <img src="{{url('img/icon/pdp/wishlist.svg')}}" alt="wishlist">
+            </button>
+            </a>
+            @else
             <button class="button button-secondary button-zakaria" onClick="addToCartAjax('{{ $product->id }}','wishlist','{{ $product->store_id }}')">
                 <img src="{{url('img/icon/pdp/wishlist.svg')}}" alt="wishlist">
             </button>
+            @endguest
         </div>
         @endif
     </div>
