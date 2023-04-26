@@ -33,10 +33,10 @@
         <div class="row align-items-center">
             <div class="col-md-6 left-section">
                 <div class="bgleft-img">
-                    <img src="{{sc_file($data->image)}}" class="img-fluid" alt="history">
+                    <img src="{{url('img/about/history-2.jpg')}}" class="img-fluid" alt="history">
                 </div>
                 <div class="img-wrapper">
-                    <img src="{{sc_file($data->imagetwo)}}" class="img-fluid" alt="history">
+                    <img src="{{url('img/about/history-1.jpg')}}" class="img-fluid" alt="history">
                 </div>
             </div>
             <div class="col-md-6 right-section">
@@ -212,40 +212,42 @@
             <div class="heading">Management</div>
             <p>We have combined our all offerings in one place</p>
         </div>
-        <div class="bottom-section">
-            <div class="row">
-                <div class="col-md-6 col-lg-4 col-xl-4 mb-4 mb-lg-0">
+        <div class="bottom-section common-slider-btn">
+            <div class="owl-carousel" id="management-slider">
+                <div class="item" >
                     <div class="inner-content">
                         <div class="img-wrapper">
                             <img src="img/about/team-01.jpg" alt="Onkar Singh Pahwa" class="img-fluid">
                         </div>
                         <div class="content">
                             <a href="#" class="large">Rishi Pahwa</a>
-                             <a href="#" class="icon"><img src="img/about/linkedin.svg" alt="linkedin" class="img-fluid"></a> 
+                            <a href="#" class="icon"><img src="img/about/linkedin.svg" alt="linkedin" class="img-fluid"></a> 
                             <p class="small">Jt. Managing Director</p>
                         </div>
                         
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 col-xl-4 mb-4 mb-lg-0">
+                <div class="item">
                     <div class="inner-content">
                         <div class="img-wrapper">
                             <img src="img/about/team-02.jpg" alt="Rishi" class="img-fluid">
                         </div>
                         <div class="content">
                             <a href="#" class="large">Onkar Singh Pahwa</a>
+                            <a href="#" class="icon"><img src="img/about/linkedin.svg" alt="linkedin" class="img-fluid"></a> 
                             <p class="small">CMD</p>
                         </div>
                     </div>
                 </div>
                 
-                <div class="col-md-6 col-lg-4 col-xl-4 mb-4 mb-lg-0">
+                <div class="item">
                     <div class="inner-content">
                         <div class="img-wrapper">
                             <img src="img/about/team-03.jpg" alt="Mandeep Pahwa" class="img-fluid">
                         </div>
                         <div class="content">
                             <a href="#" class="large">Mandeep Pahwa</a>
+                            <a href="#" class="icon"><img src="img/about/linkedin.svg" alt="linkedin" class="img-fluid"></a> 
                             <p class="small">Executive Director</p>
                         </div>
                     </div>

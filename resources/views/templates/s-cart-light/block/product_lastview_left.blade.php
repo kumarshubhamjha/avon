@@ -1,7 +1,7 @@
 
 <div class="left-section">
 
-    <div id="accordion" class="accordion-container">
+    <div id="listingAccordion" class="accordion-container">
         <!-- <div class="item">
             <div class="accordion-title js-accordion-title open">
                 <div class="img-wrapper">
@@ -31,13 +31,13 @@
       
 
         <div class="item">
-            <div class="accordion-title js-accordion-title">
+            <div class="accordion-title js-accordion-title open">
                 <div class="img-wrapper">
-                    <img class="img-fluid" src="{{url('img/icon/listing/age.svg')}}" alt="bicycle-icon">
+                    <img class="img-fluid" src="{{url('img/icon/listing/price.svg')}}" alt="Price-icon">
                 </div>
                 <p>Price</p>
             </div>
-            <div class="accordion-content">
+            <div class="accordion-content active">
                 <ul>
                     <li>
                     <input type="radio" id="radio1" name="price" value="100-1000"><label>100-1000</label>

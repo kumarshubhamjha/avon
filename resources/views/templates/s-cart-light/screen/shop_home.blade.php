@@ -15,6 +15,9 @@ Use paginate: $products->appends(request()->except(['page','_token']))->links()
    <div class="right-section">
         <div class="top-wrapper">
             <!--// Render pagination result -->
+            <div class="filters d-flex flex-wrap">
+                
+            </div>
             <!-- Render include filter sort -->
             @include($sc_templatePath.'.common.product_filter_sort', ['filterSort' => $filter_sort])
             <!--// Render include filter sort -->

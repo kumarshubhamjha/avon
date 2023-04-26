@@ -182,29 +182,43 @@ header nav.navbar .right-section .search-wrapper {
     right: 100px;
     width: 100%;
     height: auto;
-    background: #fafafa;
+    background: #f4f4f4;
     z-index: 99;
     padding: 15px;
     max-width: 400px;
     top: 100%;
 }
 
+header nav.navbar .right-section .search-wrapper .top-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav.navbar .right-section .search-wrapper .text {
+    font-size: 14px;
+}
+
 header nav.navbar .right-section .search-wrapper .form-wrap {
     display: flex;
     align-items: center;
     border-bottom: 1px solid #e8e8e8;
-    width: 85%;
+    width: 90%;
 }
 
 header nav.navbar .right-section .search-wrapper .close {
-    width: 44px;
-    height: 44px;
+    width: 34px;
+    height: 34px;
     background: #ffffff;
     border-radius: 50%;
     opacity: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+header nav.navbar .right-section .search-wrapper .close img {
+    max-width: 10px;
 }
 
 header nav.navbar .right-section .search-wrapper form {
@@ -1064,6 +1078,12 @@ header .myaccount-popup .inner-content ul.profile {
     color: #5AD235;
 }
 
+.trending-product .products .rating a {
+    font-weight: 600;
+    font-size: 16px;
+    color: #5AD235;
+}
+
 .trending-product .products .product-name span,
 .trending-product .products .color-availbilty {
     font-weight: 500;
@@ -1153,6 +1173,11 @@ header .myaccount-popup .inner-content ul.profile {
     border: 0px;
     padding: 0px;
     background: transparent;
+}
+
+.trending-product .products .price-sec-fav .fav button:focus,
+.trending-product .products .price-sec-fav .fav button:focus-visible {
+    outline: none !important;
 }
 
 .trending-product .products .price span.new-price {
@@ -2130,6 +2155,35 @@ footer .copyright p {
     background: url("../../../img/icon/listing/check.svg") center center no-repeat;
     background-size: 100%;
     left: -33px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+
+.listing-wrapper .accordion-content ul li input {
+    font-size: 14px;
+    display: flex;
+    position: absolute;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    cursor: pointer;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.listing-wrapper .accordion-content ul li input.active::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 18px;
+    height: 13px;
+    background: url("../../../img/icon/listing/check.svg") center center no-repeat;
+    background-size: 100%;
+    left: 6px;
     top: 0px;
     bottom: 0px;
     margin: auto;
@@ -4358,12 +4412,14 @@ p.inner-text {
 
 .about-history .left-section .bgleft-img {
     position: absolute;
-    left: -67%;
+    left: -69%;
     z-index: -1;
     width: 100%;
     top: 0;
     bottom: 0;
     margin: auto;
+    border-radius: 0px 10px 10px 0px;
+    overflow: hidden;
 }
 
 .about-history .right-section p {
@@ -4574,7 +4630,7 @@ p.inner-text {
 }
 
 .about-management .bottom-section {
-    width: 80%;
+    width: 84%;
     margin: auto;
 }
 
@@ -4600,7 +4656,7 @@ p.inner-text {
 .about-management .bottom-section .content p.large,
 .about-management .bottom-section .content a.large {
     font-weight: 500;
-    font-size: 24px;
+    font-size: 22px;
     line-height: 31px;
     margin-right: 5px;
 }
@@ -4612,10 +4668,11 @@ p.inner-text {
     line-height: 18px;
     color: rgba(255, 255, 255, 0.8);
     text-transform: uppercase;
+    width: 100%;
 }
 
 .about-csr {
-    padding: 75px 0px 225px 0px;
+    padding: 200px 0px;
     background: url("../../../img/about/csr-bg.jpg") center bottom no-repeat;
     min-height: 500px; 
     /* Create the parallax scrolling effect */
@@ -4638,6 +4695,7 @@ p.inner-text {
 .about-csr p.inner-text {
     color: #ffffff;
     margin-bottom: 50px;
+    text-align: center;
 }
 
 .about-csr ul {
@@ -4662,7 +4720,7 @@ p.inner-text {
 .about-csr .btn-wrapper {
     display: flex;
     justify-content: center;
-    margin-bottom: 60px;
+    margin-bottom: 0px;
     margin-top: 32px;
 }
 
