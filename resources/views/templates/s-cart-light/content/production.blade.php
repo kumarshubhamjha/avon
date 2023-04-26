@@ -13,12 +13,6 @@
     </div>
 </section>
 
-<section class="history-banner">
-    <div class="img-wrapper">
-        <img src="{{sc_file($data->production_banner)}}" class="img-fluid"></img>
-    </div>
-</section>
-
 <section class="production-pg py-60">
     <div class="container">
         <div class="row item">

@@ -37,7 +37,7 @@ $(document).ready(function () {
         loop: true,
         autoplay: true,
         items: 4,
-        autoplayTimeout: 2000,
+        autoplayTimeout: 3500,
         smartSpeed: 800,
         responsiveClass: true,
         responsive: {
@@ -120,7 +120,7 @@ $(document).ready(function () {
         nav: true,
         margin: 30,
         loop: true,
-        autoplay: true,
+        autoplay: false,
         autoHeight: true,
         items: 3,
         autoplayTimeout: 2500,

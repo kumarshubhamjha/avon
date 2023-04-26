@@ -197,6 +197,7 @@ header nav.navbar .right-section .search-wrapper .top-wrapper {
 
 header nav.navbar .right-section .search-wrapper .text {
     font-size: 14px;
+    font-weight: 600;
 }
 
 header nav.navbar .right-section .search-wrapper .form-wrap {
@@ -537,6 +538,10 @@ header .myaccount-popup .inner-content a.new-link {
     font-size: 12px;
     line-height: 16px;
     color: #313033;
+}
+
+header .myaccount-popup .inner-content a.new-link:hover {
+    color: #DD1315;
 }
 
 header .myaccount-popup .inner-content ul {
@@ -1348,6 +1353,7 @@ header .myaccount-popup .inner-content ul.profile {
     justify-content: center;
     align-items: center;
     padding: 10px;
+    margin-bottom: 1px;
 }
 
 .blog {
@@ -7316,4 +7322,44 @@ p.inner-text {
 
 .alert-dismissible .close {
     padding: 7px 15px;
+}
+
+/* Pagination */
+
+.pagination-wrap > nav {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-wrap > nav .page-link {
+    display: flex;
+    padding: 8px 12px;
+    line-height: normal;
+    color: #565656;
+    font-size: 14px;
+    border: 1px solid #e8e8e8;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination-wrap > nav .page-link:hover {
+    background: transparent;
+    color: #DD1315;
+}
+
+.pagination-wrap > nav .page-link:focus,
+.pagination-wrap > nav .page-link:focus-visible {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.pagination-wrap > nav .page-item.active .page-link {
+    background-color: #DD1315;
+    border-color: #DD1315;
+}
+
+.pagination-wrap > nav .page-item.active .page-link:hover {
+    background-color: #000000;
+    border-color: #000000;
+    color: #ffffff;
 }

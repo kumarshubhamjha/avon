@@ -31,6 +31,7 @@
     
     <link rel="preload" href="{{ sc_file($sc_templateFile.'/css/bootstrap.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'"></link>
     <link rel="preload" href="{{ sc_file($sc_templateFile.'/css/font-awesome.min.css')}}" as="style" onload="this.onload=null;this.rel='stylesheet'"></link>
+    <link rel="stylesheet" type="text/css" href="{{ sc_file($sc_templateFile.'/css/slick/slick.css')}}"/>
     
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"></link>
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'"></link>
@@ -159,12 +160,11 @@
     <!--<script src="{{ sc_file($sc_templateFile.'/js/script.js')}}"></script>-->
     <script src="{{ sc_file($sc_templateFile.'/js/bootstrap.min.js')}}"></script>
     <script src="{{ sc_file($sc_templateFile.'/js/popper.min.js')}}"></script>
-    
+    <script src="{{ sc_file($sc_templateFile.'css/slick/slick.min.js')}}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.14.0-beta3/dist/js/bootstrap-select.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
-     <!-- <script src="{{ sc_file($sc_templateFile.'/css/slick/slick.min.js')}}"></script> -->
      <script src="{{ sc_file($sc_templateFile.'/js/custom.js')}}"></script>
 
     <!-- js default for item s-cart -->

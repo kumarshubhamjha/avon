@@ -157,7 +157,7 @@
                                 <div class="search-wrapper">
                                     <div class="top-wrapper">
                                         <div class="text">I'm Looking For....</div>
-                                        <div class="close"><img src="img/icon/pdp/close.svg" alt="close"></div>
+                                        <div class="close"><img src="{{url('img/icon/pdp/close.svg')}}" alt="close"></div>
                                     </div>
                                     <div class="rd-navbar-main-element w-100">
                                         <!-- RD Navbar Search-->
@@ -169,7 +169,7 @@
                                                     <input class="rd-navbar-search-form-input form-input" type="text"
                                                         name="keyword"
                                                         placeholder="{{ sc_language_render('search.placeholder') }}" />
-                                                    <button class="rd-search-form-submit" type="submit"><img src="img/icon/icon-Search.svg" alt="Search"></button>
+                                                    <button class="rd-search-form-submit" type="submit"><img src="{{url('img/icon/icon-Search.svg')}}" alt="Search"></button>
                                                 </div>
                                             </form>
                                         </div>

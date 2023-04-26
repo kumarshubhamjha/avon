@@ -18,8 +18,8 @@ $layout_page = shop_product_detail
 <section class="pdp-wrapper">
     <div class="container">
         <div class="row">
-            <div class="col-md-8 pdp-left-section">
-                <!-- <div class="pdp-gallery-wrapper">
+            <div class="col-lg-8 pdp-left-section">
+                <div class="pdp-gallery-wrapper">
                     <div class="slider slider-nav">
                         @if ($product->images->count())
                             @php
@@ -57,9 +57,9 @@ $layout_page = shop_product_detail
                          
 
                     </div>
-                </div> -->
+                </div>
 
-                <div class="pdpGalleryWrapper">
+                <!-- <div class="pdpGalleryWrapper">
                     <div class="galSlider owl-carousel" id="pdpGallerySlider">
                         @if ($product->images->count())
                             @php
@@ -76,7 +76,7 @@ $layout_page = shop_product_detail
                             </div>
                         @endif
                     </div>
-                </div>
+                </div> -->
                  
                  @if($product->feature_heading || $product->feature_sub_heading || $product->feature)
                 <section class="pdp-spec py-60">
@@ -166,7 +166,7 @@ $layout_page = shop_product_detail
                 @endif
                 <!--End Of FAQ-->
             </div>
-            <div class="col-md-4 pdp-right-section">
+            <div class="col-lg-4 pdp-right-section">
                 <div class="inner-section">
                     <div class="top-section">
                         <div class="product-name-rating">

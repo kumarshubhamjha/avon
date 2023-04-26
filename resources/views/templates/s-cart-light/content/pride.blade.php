@@ -28,8 +28,8 @@
             </div>
             <div class="col-md-6">
                 <div class="img-wrapper">
-                    <img src="img/about/group-history-1.jpg" alt="top-img" class="img-fluid">
-                    <img src="img/about/group-history-2.jpg" alt="bottom-img" class="img-fluid">
+                    <img src="{{sc_file($data->image)}}" alt="top-img" class="img-fluid">
+                    <img src="{{sc_file($data->imagetwo)}}" alt="bottom-img" class="img-fluid">
                 </div>
             </div>
             <div class="col-md-12 text-wrapper">

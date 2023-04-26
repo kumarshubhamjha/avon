@@ -389,6 +389,24 @@
         max-width: 38px;
     }
 
+    header nav.navbar .right-section .right-icons ul li.search::before {
+        display: none;
+    }
+
+    header nav.navbar .right-section .search-wrapper {
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background: #f4f4f4;
+        z-index: 99;
+        padding: 15px;
+        max-width: 100%;
+        top: 54px;
+    }
+    
+
     /* Banner */
     .home-pg .main-banner {
         margin-top: -52px;
