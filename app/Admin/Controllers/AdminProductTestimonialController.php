@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 use Yajra\DataTables\DataTables;
 use App\Admin\Models\ProductTestimonial;
+use SCart\Core\Admin\Models\AdminProduct;
+use SCart\Core\Front\Models\ShopProductDescription;
 
 
 class AdminProductTestimonialController extends BaseController
@@ -35,11 +37,13 @@ class AdminProductTestimonialController extends BaseController
     public function addEdit(Request $request, $id = null)
     {
         $url_action = sc_route_admin('producttestimonial.storeUpdate');
+        $products = AdminProduct::all();
+        //echo '<pre>';print_r($products);die;
         if($id != null && $id != ''){
             $data = ProductTestimonial::where('id',$id)->first();
-            return view('s-cart-admin::'.'screen.producttestimonial.addEdit',compact('url_action','data'));
+            return view('s-cart-admin::'.'screen.producttestimonial.addEdit',compact('url_action','data', 'products'));
         }else{
-            return view('s-cart-admin::'.'screen.producttestimonial.addEdit',compact('url_action'));
+            return view('s-cart-admin::'.'screen.producttestimonial.addEdit',compact('url_action', 'products'));
         }
         
     }
@@ -54,9 +58,13 @@ class AdminProductTestimonialController extends BaseController
            
             'author'    => $data['author'],
               'location'    => $data['location'],
+              'productid'    => $data['productid'],
+              'title'    => $data['title'],
+              'rating'    => $data['rating'],
               'review'    => $data['review'],
               'image'    => $data['image'],
             'status'   => empty($data['status']) ? 0 : 1,
+            'verified'   => empty($data['verified']) ? 0 : 1,
             'sort'     => (int) $data['sort'],
         ];
         if($request->has('id') && ($data['id'] != null) && ($data['id'] != '')){
