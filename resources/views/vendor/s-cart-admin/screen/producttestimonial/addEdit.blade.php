@@ -99,20 +99,20 @@
                                     class="col-sm-2 col-form-label">Rating</label>
                                 <div class="col-sm-8">
                                     <label>1<label>
-                                    <input class="checkbox" type="radio" name="rating"
-                                        {{ old('rating', empty($data['rating']) ? 0 : 1) == 1 ? 'checked' : '' }}>
+                                    <input class="checkbox" value="1" type="radio" name="rating"
+                                        {{ isset($data['rating']) ? ( $data['rating'] ==  1 ? 'checked' : '' ) : '' }}>
                                     <label>2<label>
-                                    <input class="checkbox" type="radio" name="rating"
-                                        {{ old('rating', empty($data['rating']) ? 0 : 1) == 2 ? 'checked' : '' }}>
+                                    <input class="checkbox" value="2" type="radio" name="rating"
+                                        {{ isset($data['rating']) ? ( $data['rating'] ==  2 ? 'checked' : '' ) : '' }}>
                                     <label>3<label>
-                                    <input class="checkbox" type="radio" name="rating"
-                                        {{ old('rating', empty($data['rating']) ? 0 : 1) == 3 ? 'checked' : '' }}>
+                                    <input class="checkbox" value="3" type="radio" name="rating"
+                                        {{ isset($data['rating']) ? ( $data['rating'] ==  3 ? 'checked' : '' ) : '' }}>
                                     <label>4<label>
-                                    <input class="checkbox" type="radio" name="rating"
-                                        {{ old('rating', empty($data['rating']) ? 0 : 1) == 4 ? 'checked' : '' }}>
+                                    <input class="checkbox" value="4" type="radio" name="rating"
+                                        {{ isset($data['rating']) ? ( $data['rating'] ==  4 ? 'checked' : '' ) : '' }}>
                                     <label>5<label>
-                                    <input class="checkbox" type="radio" name="rating"
-                                        {{ old('rating', empty($data['rating']) ? 0 : 1) == 5 ? 'checked' : '' }}>
+                                    <input class="checkbox" value="5" type="radio" name="rating"
+                                        {{ isset($data['rating']) ? ( $data['rating'] ==  5 ? 'checked' : '' ) : '' }}>
                                 </div>
                             </div>
 
