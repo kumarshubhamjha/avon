@@ -9,7 +9,7 @@
 
                     <div class="card-tools">
                         <div class="btn-group float-right mr-5">
-                            <a href="{{ sc_route_admin('producttestimonials') }}" class="btn  btn-flat btn-default" title="List"><i
+                            <a href="{{ sc_route_admin('producttestimonial') }}" class="btn  btn-flat btn-default" title="List"><i
                                     class="fa fa-list"></i><span class="hidden-xs">
                                     {{ sc_language_render('admin.back_list') }}</span></a>
                         </div>
@@ -23,6 +23,29 @@
                         <div class="fields-group">
                             <input type="text" id="id" name="id" value="{{ old('id', $data['id'] ?? '') }}"
                                 hidden />
+
+                          
+                            
+                            <div class="form-group  row {{ $errors->has('title') ? ' text-red' : '' }}">
+                                <label for="name" class="col-sm-2 col-form-label">Title</label>
+                                <div class="col-sm-8">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text"><i class="fas fa-pencil-alt"></i></span>
+                                            </div>
+                                        </div>
+                                        <input type="text" id="title" name="title"
+                                        value="{{ old() ? old('title') : $data['title'] ?? '' }}" class="form-control"
+                                        placeholder="" />
+                                    </div>
+                                    @if ($errors->has('title'))
+                                        <span class="form-text">
+
+                                        </span>
+                                    @endif
+                                </div>
+                            </div>
 
                           
                             
@@ -44,6 +67,52 @@
                             
                                         </span>
                                     @endif
+                                </div>
+                            </div>
+
+                            <div class="form-group row kind  {{ $errors->has('productid') ? ' text-red' : '' }}">
+                            <label for="category" class="col-sm-2 col-form-label">
+                                Rating For Product
+                            </label>
+                            <div class="col-sm-8">
+                                <div class="input-group">
+                                <select class="form-control input-sm category select2"
+                                    name="productid">
+                                    <option value=""></option>
+                                    @foreach ($products as $product)
+                                    <option value="{{ $product->id }}"
+                                        {{ isset($data['productid']) ? ( $data['productid'] ==  $product->id ? 'selected' : '' ) : '' }}>{{ \App\Helper\Helpers::getProductName($product->id) }}
+                                    </option>
+                                    @endforeach
+                                </select>
+                                </div>
+                                @if ($errors->has('productid'))
+                                <span class="form-text">
+                                    <i class="fa fa-info-circle"></i> {{ $errors->first('productid') }}
+                                </span>
+                                @endif
+                            </div>
+                        </div>
+
+                            <div class="form-group row ">
+                                <label for="status"
+                                    class="col-sm-2 col-form-label">Rating</label>
+                                <div class="col-sm-8">
+                                    <label>1<label>
+                                    <input class="checkbox" type="radio" name="rating"
+                                        {{ old('rating', empty($data['rating']) ? 0 : 1) == 1 ? 'checked' : '' }}>
+                                    <label>2<label>
+                                    <input class="checkbox" type="radio" name="rating"
+                                        {{ old('rating', empty($data['rating']) ? 0 : 1) == 2 ? 'checked' : '' }}>
+                                    <label>3<label>
+                                    <input class="checkbox" type="radio" name="rating"
+                                        {{ old('rating', empty($data['rating']) ? 0 : 1) == 3 ? 'checked' : '' }}>
+                                    <label>4<label>
+                                    <input class="checkbox" type="radio" name="rating"
+                                        {{ old('rating', empty($data['rating']) ? 0 : 1) == 4 ? 'checked' : '' }}>
+                                    <label>5<label>
+                                    <input class="checkbox" type="radio" name="rating"
+                                        {{ old('rating', empty($data['rating']) ? 0 : 1) == 5 ? 'checked' : '' }}>
                                 </div>
                             </div>
 
@@ -166,6 +235,14 @@
                                 <div class="col-sm-8">
                                     <input class="checkbox" type="checkbox" name="status"
                                         {{ old('status', empty($data['status']) ? 0 : 1) ? 'checked' : '' }}>
+                                </div>
+                            </div>
+                            <div class="form-group row ">
+                                <label for="verified"
+                                    class="col-sm-2 col-form-label">Verified</label>
+                                <div class="col-sm-8">
+                                    <input class="checkbox" type="checkbox" name="verified"
+                                        {{ old('verified', empty($data['verified']) ? 0 : 1) ? 'checked' : '' }}>
                                 </div>
                             </div>
                             <div class="card-footer row">

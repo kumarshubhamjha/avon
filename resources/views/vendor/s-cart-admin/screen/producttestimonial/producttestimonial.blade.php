@@ -35,7 +35,9 @@
                 <tr>
                     <th>No</th>
                     <th>Author</th>
+                    <th>Title</th>
                     <th>Location</th>
+                    <th>Rating</th>
                     <th>Image</th>
                     <th>Review</th>
                     <th>Sort</th>
@@ -64,8 +66,16 @@
                         name: 'author'
                     },
                     {
+                        data: 'title',
+                        name: 'title'
+                    },
+                    {
                         data: 'location',
                         name: 'location'
+                    },
+                    {
+                        data: 'rating',
+                        name: 'rating'
                     },
                     {
                         data: 'image',
