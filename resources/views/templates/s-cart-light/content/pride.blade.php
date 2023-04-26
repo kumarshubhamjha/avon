@@ -13,52 +13,27 @@
     </div>
 </section>
 
-<section class="history-banner">
-    <div class="img-wrapper">
-        <img src="{{sc_file($data->pride_banner)}}" class="img-fluid"></img>
-    </div>
-</section>
-
-<section class="production-pg">
+<section class="group-history-pg">
     <div class="container">
-        <div class="row item">
-            <!--<div class="col-lg-6 img-box">-->
-            <!--    <div class="img-wrapper">-->
-            <!--        <img src="{{sc_file($data->image)}}" alt="" class="img-fluid">-->
-            <!--    </div>-->
-            <!--</div>-->
-            <div class="col-lg-12 text-box">
+        <div class="row py-60">
+            <div class="col-md-6">
                 <div class="heading-wrapper">
                     <div class="heading">History of Pride</div>
                     <p>We have combined our all offerings in one place</p>
                 </div>
                 <div class="text-wrapper">
-                  <p>  {!! $data->pride_content !!}</p>
-                   </div>
-            </div>
-        </div>
-        <div class="row item">
-            <div class="col-lg-6 img-box">
-                <div class="img-wrapper">
-                    <img src="{{sc_file($data->image)}}" alt="" class="img-fluid">
+                    <p>{!! $data->pride_content !!}</p>
+                    <p>{!! $data->pride_contenttwo !!}</p>
                 </div>
             </div>
-            <div class="col-lg-6 text-box">
-               <div class="text-wrapper">
-                   <p> {!! $data->pride_contenttwo !!}</p>
-                   </div>
-            </div>
-        </div>
-        <div class="row item">
-            <div class="col-lg-6 img-box">
+            <div class="col-md-6">
                 <div class="img-wrapper">
-                    <img src="{{sc_file($data->imagetwo)}}" alt="" class="img-fluid">
+                    <img src="img/about/group-history-1.jpg" alt="top-img" class="img-fluid">
+                    <img src="img/about/group-history-2.jpg" alt="bottom-img" class="img-fluid">
                 </div>
             </div>
-            <div class="col-lg-6 text-box">
-               <div class="text-wrapper">
-                   <p> {!! $data->pride_contentthree !!}</p>
-                   </div>
+            <div class="col-md-12 text-wrapper">
+                <p>{!! $data->pride_contentthree !!}</p>
             </div>
         </div>
     </div>

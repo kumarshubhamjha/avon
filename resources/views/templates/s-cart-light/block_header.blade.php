@@ -156,6 +156,7 @@
                                 </ul>
                                 <div class="search-wrapper">
                                     <div class="top-wrapper">
+                                        <div class="text">I'm Looking For....</div>
                                         <div class="close"><img src="img/icon/pdp/close.svg" alt="close"></div>
                                     </div>
                                     <div class="rd-navbar-main-element w-100">

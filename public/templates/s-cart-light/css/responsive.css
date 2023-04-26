@@ -1028,6 +1028,7 @@
     /* Checkout Page */
     .prods-wrapper .item .right-section .bottom-wrapper {
         justify-content: flex-end;
+        border-top: 0px;
     }
 
     .prods-wrapper .item .right-section .bottom-wrapper .text {
@@ -1055,12 +1056,15 @@
     }
 
     .prods-wrapper .item .right-section {
-        width: 95%;
+        width: 92%;
         border-top: 1px solid #e8e8e8;
+        flex-direction: row;
+        justify-content: space-between;
     }
 
     .prods-wrapper .item .remove-item {
-        width: 5%;
+        width: 8%;
+        justify-content: center;
     }
 
     .checkout-confirm-pg .prods-wrapper .item .right-section {
@@ -1070,6 +1074,11 @@
     .checkout-confirm-pg .prods-wrapper .item .remove-item,
     .prods-wrapper .item .remove-item {
         border-top: 1px solid #e8e8e8;
+    }
+
+    .prods-wrapper .item .right-section .bottom-wrapper .qty {
+        border: 1px solid #e8e8e8;
+        margin-right: 10px;
     }
 
     .checkout-confirm-pg .heading {
